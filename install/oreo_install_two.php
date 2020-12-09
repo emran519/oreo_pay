@@ -176,50 +176,7 @@ function checkclass($f,$m = false) {
 
       </div>
 </div>
-<div class="Envin_lf">
-      <div class="menter_lf"><span>目录权限检测</span></div>
-      <div class="menter_table_lf">
-      <table width="1000" border="0" cellspacing="0" cellpadding="0" class="tabletable">
-        <thead>
-            <tr> 
-              <th>目录名</th>
-              <th>说明</th>
-              <th>权限检测</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-              <td>../oreo/logs</td>
-              <td>在线升级日志存放位置</td>
-              <td>
-			  <?php
-			  $path = '../oreo/logs';
-                   if(!is_writable($path)){
-                   echo '文件夹没有写入的权限';
-                   exit;
-                  }else{
-                   echo '文件夹可写入';
-                } ?>
-			</td>
-            </tr>
-            <tr>
-              <td>../template</td>
-              <td>升级后模板写入位置</td>
-              <<td>
-			  <?php
-			  $path = '../template';
-                   if(!is_writable($path)){
-                   echo '文件夹没有写入的权限';
-                   exit;
-                  }else{
-                   echo '文件夹可写入';
-                } ?>
-			</td>
-            </tr> 
-        </tbody>
-      </table>
-      </div>
-</div>
+
     <div class="menter_btn_lf"></div>
     <div class="menter_btn_a_lf">
            <a href="oreo_install_two.php?do=1"><input name="" type="button" class="menter_btn_a_a_lf"value="继续"></a>
