@@ -118,12 +118,6 @@
                                     <span> 监控配置 </span>
                                 </a>
                             </li>
-							<li>
-                                <a href="oreo_update.php?a=update" class="waves-effect">
-                                    <i class="mdi mdi-matrix"></i>
-                                    <span> 在线升级 </span>
-                                </a>
-                            </li>
                         </ul>
                     </div>
                     <div class="clearfix"></div>
