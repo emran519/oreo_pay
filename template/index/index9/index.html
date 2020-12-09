@@ -1,0 +1,53 @@
+<?php
+define('STATIC_ROOT', 'template/index/index9/assets/');
+?>
+<!DOCTYPE html>
+<html>
+	<head>
+		<title><?= $conf['web_name']?> - 会支付会生活</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="<?= STATIC_ROOT?>css/main.css"/>
+	</head>
+	<body onselectstart="return false" oncontextmenu=self.event.returnValue=false>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="logo">
+
+							<span class="icon fa-diamond"><font size="8">易</font></span>						</div>
+						<div class="content">
+							<div class="inner">
+								<h1><?= $conf['web_name']?></h1>
+							</div>
+						</div>
+						<nav>
+							<ul>
+								<li><a href="/user/"  target="_blank">用户中心</a></li>
+								<li><a href="/user/"  target="_blank">商户注册</a></li>
+								<li><a href="https://doc.oreopay.com"  target="_blank">开发文档</a></li>
+								<li><a href="/SDK/" target="_blank">在线测试</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">备案号:<?php echo $conf['beian']?> <?= $conf['web_name']?>·极致体验</a></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="<?= STATIC_ROOT?>js/jquery.min.js" ></script>
+			<script src="<?= STATIC_ROOT?>js/skel.min.js"></script>
+			<script src="<?= STATIC_ROOT?>js/util.js" ></script>
+			<script src="<?= STATIC_ROOT?>js/main.js" ></script>
+	</body>
+</html>

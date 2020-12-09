@@ -1,0 +1,293 @@
+<?php
+define('STATIC_ROOT', 'template/index/index8/assets/');
+?>
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title><?php echo $conf['web_name']?>-行业领先的免签约支付平台</title>
+    <meta name="keywords" content="<?php echo $conf['web_name']?>,Oreo支付系统,易支付,免签约支付平台">
+    <meta name="description" content="<?php echo $conf['web_name']?>免签约支付平台，致力于为更多用户提供稳定而又易用的支付平台！">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="<?= STATIC_ROOT?>css/reset.css">
+    <link href="<?= STATIC_ROOT?>css/bootstrap.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="<?= STATIC_ROOT?>css/animate.css">
+    <link rel="stylesheet" href="<?= STATIC_ROOT?>css/swiper.css">
+    <link rel="stylesheet" href="<?= STATIC_ROOT?>css/flexslider.css">
+    <link href="<?= STATIC_ROOT?>css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="<?= STATIC_ROOT?>css/app.css">
+</head>
+<body>
+<div id="loading" class="loading-layer">
+    <div class="adjust-block">
+        <div class="load ">
+            <span class="sharingan"></span>
+            <span class="sharingan"></span>
+            <span class="sharingan"></span></div>
+    </div>
+</div>
+<header class="header">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+<span class="mobile-menu-icon visible-xs">
+<a id="btn-nav" href="#">
+<span>
+</span>
+<span>
+</span>
+<span>
+</span>
+</a>
+</span>
+            </div>
+            <div class="col-sm-10">
+                <nav id="site-nav" class="nav-toggle">
+                    <ul class="menu">
+                        <li><a href="/user/login.php">商户登陆</a></li>
+                        <li><a href="/user/">商户申请</a></li>
+                        <li><a href="/SDK">在线测试</a></li>
+                        <li><a href="https://doc.oreopay.com">开发文档</a></li>
+                        <li><a href="http://wpa.qq.com/msgrd?v=3&uin=<?php echo $conf['web_qq']?>&site=qq&menu=yes">联系客服</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<div id="full-slider" class="flexslider section-slider">
+    <ul class="slides">
+        <li>
+            <img src="<?= STATIC_ROOT?>picture/1.jpg" alt/>
+            <div class="adjust-block">
+                <h2 class="slide-title"><?php echo $conf['web_name']?></h2>
+                <p class="slide-description">截止目前已有<strong style="color:blue;"> <b><?php echo $count2?></b></strong> 个商户在使用本平台</p>
+                <p class="slide-description"><strong style="color:red;"> <b>每笔交易<?php echo 100-$conf['money_rate']; ?>％费率，结算仅<?php $a=100;$b=$conf['settle_rate'];echo $a*$b?>%手续费！</b></strong></p>
+                <div class="btns-row">
+                    <a href="/user/login.php" class="btn btn-tran">登录商户</a>
+                    <a href="/user/reg.php?my=add" class="btn btn-bl">申请接入</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="<?= STATIC_ROOT?>picture/2.jpg" alt/>
+            <div class="adjust-block">
+                <h2 class="slide-title"><?php echo $conf['web_name']?></h2>
+                <p class="slide-description">截止目前已有<strong style="color:blue;"> <b><?php echo $count2?></b></strong> 个商户在使用本平台</p>
+                <p class="slide-description"><strong style="color:red;"> <b>每笔交易<?php echo 100-$conf['money_rate']; ?>％费率，结算仅<?php $a=100;$b=$conf['settle_rate'];echo $a*$b?>%手续费！</b></strong></p>
+                <div class="btns-row">
+                    <a href="/user/login.php" class="btn btn-tran">登录商户</a>
+                    <a href="/user/reg.php?my=add" class="btn btn-bl">申请接入</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="<?= STATIC_ROOT?>picture/3.jpg" alt/>
+            <div class="adjust-block">
+                <h2 class="slide-title"><?php echo $conf['web_name']?></h2>
+                <p class="slide-description">截止目前已有<strong style="color:blue;"> <b><?php echo $count2?></b></strong> 个商户在使用本平台</p>
+                <p class="slide-description"><strong style="color:red;"> <b>每笔交易<?php echo 100-$conf['money_rate']; ?>％费率，结算仅<?php $a=100;$b=$conf['settle_rate'];echo $a*$b?>%手续费！</b></strong></p>
+                <div class="btns-row">
+                    <a href="/user/login.php" class="btn btn-tran">登录商户</a>
+                    <a href="/user/" class="btn btn-bl">申请接入</a>
+                </div>
+            </div>
+        </li>
+        <li>
+            <img src="<?= STATIC_ROOT?>picture/4.jpg" alt/>
+            <div class="adjust-block">
+                <h2 class="slide-title"><?php echo $conf['web_name']?></h2>
+                <p class="slide-description">截止目前已有<strong style="color:blue;"> <b><?php echo $count2?></b></strong> 个商户在使用本平台</p>
+                <p class="slide-description"><strong style="color:red;"> <b>每笔交易<?php echo 100-$conf['money_rate']; ?>％费率，结算仅<?php $a=100;$b=$conf['settle_rate'];echo $a*$b?>%手续费！</b></strong></p>
+                <div class="btns-row">
+                    <a href="/user/login.php" class="btn btn-tran">登录商户</a>
+                    <a href="/user/reg.php?my=add" class="btn btn-bl">申请接入</a>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>
+<div class="section section-services" align="center">
+    <div class="title-block title-sub">
+        <h3 class="title-big">
+            我们的优势
+        </h3>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="service-block service-left">
+                    <div class="circle-icon feature-icon">
+                        <i class="fa fa-balance-scale"></i></div>
+                    <div class="serv-info">
+                        <h3 class="serv-title">
+                            分布执行</h3>
+                        <p class="serv-desc">
+                            程序深度优化，支付无延迟 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service-block service-left">
+                    <div class="circle-icon feature-icon">
+                        <i class="fa fa-user-circle-o"></i></div>
+                    <div class="serv-info">
+                        <h3 class="serv-title">
+                            账号管理 </h3>
+                        <p class="serv-desc">
+                            一账号可多网站接入，人性化 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service-block service-left">
+                    <div class="circle-icon feature-icon">
+                        <i class="fa fa-bar-chart"></i></div>
+                    <div class="serv-info">
+                        <h3 class="serv-title">
+                            实时监控 </h3>
+                        <p class="serv-desc">
+                            实时监控支付订单状态，0漏单</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service-block service-left">
+                    <div class="circle-icon feature-icon">
+                        <i class="fa fa-check-circle-o"></i></div>
+                    <div class="serv-info">
+                        <h3 class="serv-title">
+                            安全保证 </h3>
+                        <p class="serv-desc">
+                            本平台敏感信息修改均需密保</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service-block service-left">
+                    <div class="circle-icon feature-icon">
+                        <i class="fa fa-crosshairs"></i></div>
+                    <div class="serv-info">
+                        <h3 class="serv-title">
+                            T+1结算 </h3>
+                        <p class="serv-desc">
+                            T+1结算机制，让您的资金有保障！</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="service-block service-left">
+                    <div class="circle-icon feature-icon">
+                        <i class="fa fa-cubes"></i></div>
+                    <div class="serv-info">
+                        <h3 class="serv-title">
+                            高效服务 </h3>
+                        <p class="serv-desc">
+                            7X24小时在线客服随叫随到！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-funinfo">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <div class="count-block">
+                    <div class="count-icon animate pulse" style="visibility: visible; animation-name: pulse;">
+                        <i class="fa fa-users"></i>
+                    </div>
+                    <div class="count-amount animate zoomIn" data-from="25" data-to="<?php echo $count2?>" style="visibility: visible; animation-name: zoomIn;"><?php echo $count2?></div>
+                    <div class="count-name">
+                        商户数量
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="count-block">
+                    <div class="count-icon animate pulse" style="visibility: visible; animation-name: pulse;">
+                        <i class="fa fa-bar-chart"></i>
+                    </div>
+                    <div class="count-amount animate zoomIn" data-from="25" data-to="<?php echo $count1?>" style="visibility: visible; animation-name: zoomIn;"><?php echo $count1?></div>
+                    <div class="count-name">
+                        订单总数
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="count-block">
+                    <div class="count-icon animate pulse" style="visibility: visible; animation-name: pulse;">
+                        <i class="fa fa-cube"></i>
+                    </div>
+                    <div class="count-amount animate zoomIn" data-from="25" data-to="<?php echo $data['settlemoney']?>" style="visibility: visible; animation-name: zoomIn;"><?php echo $data['settlemoney']?></div>
+                    <div class="count-name">
+                        结算金额
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-6 col-sm-3">
+                <div class="count-block">
+                    <div class="count-icon animate pulse" style="visibility: visible; animation-name: pulse;">
+                        <i class="fa fa-cubes"></i>
+                    </div>
+                    <div class="count-amount animate zoomIn" data-from="25" data-to="<?php echo $data['usermoney']?>" style="visibility: visible; animation-name: zoomIn;"><?php echo $data['usermoney']?></div>
+                    <div class="count-name">
+                        平台流水
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section-pricing">
+    <div class="title-block">
+        <div class="title-big">
+            平台合作伙伴
+        </div>
+        <center>
+            <img style="FILTER: gray()" src="<?= STATIC_ROOT?>picture/aliyun.png" width="85">
+            <img style="FILTER: gray()" src="<?= STATIC_ROOT?>picture/qqpay.png" width="85">
+            <img style="FILTER: gray()" src="<?= STATIC_ROOT?>picture/wxpay.png" width="85">
+            <img style="FILTER: gray()" src="<?= STATIC_ROOT?>picture/cftpay.png" width="85">
+        </center>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<footer class="footer-bottom">
+    <p class="copyright">
+        Copyright © 2016-<?=date('Y')?> All Rights Reserved by <a href="/" title="<?php echo $conf['web_name']?>"><?php echo $conf['web_name']?></a></br>
+        <a href="/"><?php echo $conf['beian']?></a>
+    </p>
+</footer>
+<script src="<?= STATIC_ROOT?>js/jquery.js"></script>
+<script src="<?= STATIC_ROOT?>js/image-loaded.js"></script>
+<script src="<?= STATIC_ROOT?>js/wow.js"></script>
+<script src="<?= STATIC_ROOT?>js/swiper.jquery.min.js"></script>
+<script src="<?= STATIC_ROOT?>js/isotope.pkgd.min.js"></script>
+<script src="<?= STATIC_ROOT?>js/jquery.countto.js"></script>
+<script src="<?= STATIC_ROOT?>js/jquery.flexslider.js"></script>
+<script src="<?= STATIC_ROOT?>js/app.js"></script>
+<script type='text/javascript'>
+    (function(m, ei, q, i, a, j, s) {
+        m[i] = m[i] || function() {
+            (m[i].a = m[i].a || []).push(arguments)
+        };
+        j = ei.createElement(q),
+            s = ei.getElementsByTagName(q)[0];
+        j.async = true;
+        j.charset = 'UTF-8';
+        j.src = 'https://static.meiqia.com/dist/meiqia.js?_=t';
+        s.parentNode.insertBefore(j, s);
+    })(window, document, 'script', '_MEIQIA');
+    _MEIQIA('entId', <?php echo $conf['kfset_mqid']?>);
+</script>
+</body>
+</html>
+</plaintext>
+</body>
+</html>

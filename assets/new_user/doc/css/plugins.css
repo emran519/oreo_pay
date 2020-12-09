@@ -1,0 +1,169 @@
+
+
+.point-btn-back-show{
+	background: url('../images/unique/icons/button-point-red.png') no-repeat center;
+	-webkit-animation: show-btn-point 0.2s 0s ease-out forwards;
+	animation: show-btn-point 0.2s 0s ease-out forwards;
+}
+
+@keyframes show-btn-point {
+	from{
+		background-size: 80% 80%;
+	}
+	to{
+		background-size: 100% 100%;
+	}
+}
+
+.myButton-black {
+  width: 180px;
+  -moz-box-shadow: 0px 9px 50px -9px  #ababab;
+  -webkit-box-shadow: 0px 9px 50px -9px  #ababab;
+  box-shadow: 0px 9px 50px -9  #ababab;
+  background-color:#232423;
+  /*background:linear-gradient(to right, #232423,#232423);*/
+  -moz-border-radius:42px;
+  -webkit-border-radius:42px;
+  border-radius:42px;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:NotoSansCJKscThin;
+  font-size:14px;
+  padding:21px 0;
+  text-decoration:none;
+  text-shadow:0px 0px 0px #242424;
+  text-align: center;
+
+
+  -webkit-transition: all 3s ease-out;
+  transition: all .3s ease-out;
+}
+
+.myButton-black:hover{
+
+  box-shadow: 0px 9px 50px -9px #ffadad;
+  background-color:#FF1033;
+  background-image:linear-gradient(to right,#FF7D8C,#FF1033);
+}
+
+.myButton-black:link{
+  color: #fff;
+  outline: none;
+}
+
+.myButton-black:visited {
+  color: #fff;
+  outline: none;
+}
+
+.myButton-white {
+  width: 202px;
+  -moz-box-shadow: 0px 9px 50px -9px  #ababab;
+  -webkit-box-shadow: 0px 9px 50px -9px  #ababab;
+  box-shadow: 0px 9px 50px -9  #ababab;
+  background-color:#fff;
+  /*background:linear-gradient(to right, #232423,#232423);*/
+  -moz-border-radius:42px;
+  -webkit-border-radius:42px;
+  border-radius:42px;
+  border:0.5px solid #000;
+  display:inline-block;
+  cursor:pointer;
+  color:#000;
+  font-family:Arial;
+  font-size:14px;
+  padding:21px 50px;
+  text-decoration:none;
+  /*text-shadow:0px 0px 0px #242424;*/
+
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  text-align: center;
+}
+
+.myButton-white:hover{
+  color: #fff;
+  background:#000;
+  /*background-image:#000;*/
+}
+
+.myButton-white:link{
+  color: #000;
+  outline: none;
+}
+
+.myButton-white:visited {
+  color: #000;
+  outline: none;
+}
+
+a:hover{
+  text-decoration: none;
+}
+
+button:focus{
+  outline: none;
+  text-decoration: none;
+}
+
+a:link{
+  text-decoration: none;
+  outline: none;
+}
+
+a:visited{
+  text-decoration: none;
+  outline: none;
+}
+
+
+.black-line-med{
+  display: inline-block;
+  background-color: #000;
+  height: 2px;
+  width: 40px;
+  border-radius: 1.5px;
+}
+.green-line-med{
+  display: inline-block;
+  background-color: #50E3C2;
+  height: 2px;
+  width: 40px;
+  border-radius: 1.5px;
+}
+.blue-line-med{
+  display: inline-block;
+  background-color: #F6A623;
+  height: 2px;
+  width: 40px;
+  border-radius: 1.5px;
+}
+.red-line-med{
+  display: inline-block;
+  background-color: #68BEF5;
+  height: 2px;
+  width: 40px;
+  border-radius: 1.5px;
+}
+.orange-line-short{
+  display: inline-block;
+  background-color: orange;
+  height: 3px;
+  width: 25px;
+  border-radius: 1.5px;
+}
+.red-line-short{
+  display: inline-block;
+  background-color: red;
+  height: 3px;
+  width: 20px;
+  border-radius: 1.5px;
+}
+.gray-line-short{
+  display: inline-block;
+  background-color: #DDD;
+  height: 3px;
+  width: 20px;
+  border-radius: 1.5px;
+}

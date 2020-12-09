@@ -1,0 +1,4 @@
+<br/>Trying to ssl://smtp.exmail.qq.com:465
+<br/><br/>Connected to relay host ssl://smtp.exmail.qq.com
+<br/><br/>Error: Remote host returned "501 Bad address syntax"
+<br/><br/>Error: Cannot send email to [  ] (Step 2)<br/><br/>Error: Error occurred while sending RCPT TO command.<br/><br/>

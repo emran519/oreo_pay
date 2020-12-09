@@ -1,0 +1,3346 @@
+﻿/**
+-   Page Shot Codes -----------------------------------------
+**/
+/* line 1, ../sass/pages/theme/_shotcodes.scss */
+.section-shotcodes {
+  padding-bottom: 70px;
+  border-color: #fff;
+}
+
+/**
+-   Site General Styles -----------------------------------------
+**/
+/* line 1, ../sass/modules/_site.scss */
+::-moz-selection {
+  background: #20ddfd;
+}
+
+/* line 2, ../sass/modules/_site.scss */
+::selection {
+  background: #20ddfd;
+}
+
+/* line 4, ../sass/modules/_site.scss */
+body {
+  font-size: 16px;
+  font-family: "Raleway";
+  color: #616161;
+  overflow-x: hidden;
+}
+
+/* line 11, ../sass/modules/_site.scss */
+a {
+  text-decoration: none;
+}
+/* line 13, ../sass/modules/_site.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 18, ../sass/modules/_site.scss */
+p {
+  line-height: 25px;
+}
+
+/* line 22, ../sass/modules/_site.scss */
+.loading-layer {
+  background-color: #162532;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  z-index: 500;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 36, ../sass/modules/_site.scss */
+.load {
+  width: 50px;
+  height: 50px;
+  margin: auto;
+  position: relative;
+  animation-fill-mode: both;
+}
+
+/* line 43, ../sass/modules/_site.scss */
+.sharingan {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #20ddfd;
+  background-color: #20ddfd;
+  border-radius: 100%;
+  display: block;
+  position: absolute;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-timing-function: ease-in-out;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+/* line 57, ../sass/modules/_site.scss */
+.sharingan:nth-of-type(1) {
+  -moz-animation-name: ball-triangle-path-1;
+  -webkit-animation-name: ball-triangle-path-1;
+  animation-name: ball-triangle-path-1;
+  top: 50px;
+}
+/* line 62, ../sass/modules/_site.scss */
+.sharingan:nth-of-type(2) {
+  left: 25px;
+  -moz-animation-name: ball-triangle-path-2;
+  -webkit-animation-name: ball-triangle-path-2;
+  animation-name: ball-triangle-path-2;
+}
+/* line 67, ../sass/modules/_site.scss */
+.sharingan:nth-of-type(3) {
+  top: 50px;
+  left: 50px;
+  -moz-animation-name: ball-triangle-path-3;
+  -webkit-animation-name: ball-triangle-path-3;
+  animation-name: ball-triangle-path-3;
+}
+
+@keyframes ball-triangle-path-1 {
+  33% {
+    transform: translate(25px, -50px);
+  }
+  66% {
+    transform: translate(50px, 0px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes ball-triangle-path-2 {
+  33% {
+    transform: translate(25px, 50px);
+  }
+  66% {
+    transform: translate(-25px, 50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+@keyframes ball-triangle-path-3 {
+  33% {
+    transform: translate(-50px, 0px);
+  }
+  66% {
+    transform: translate(-25px, -50px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
+/**
+-  Site Header Styles -----------------------------------------
+**/
+/* line 3, ../sass/modules/_site-header.scss */
+.header {
+  position: absolute;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+  font-family: "Roboto";
+  font-size: 14px;
+  z-index: 30;
+  padding-top: 15px;
+}
+
+/* line 19, ../sass/modules/_site-header.scss */
+.site-logo {
+  position: relative;
+  display: block;
+  z-index: 50;
+  padding: 24px 0;
+}
+
+/* line 26, ../sass/modules/_site-header.scss */
+.menu {
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 26, ../sass/modules/_site-header.scss */
+  .menu {
+    float: right;
+    text-align: right;
+  }
+}
+/* line 34, ../sass/modules/_site-header.scss */
+.menu > li > a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #20ddfd;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -webkit-transform: scale(0);
+  transform: scale(0);
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+/* line 47, ../sass/modules/_site-header.scss */
+.menu a {
+  color: inherit;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: 15px;
+  padding: 25px 0;
+  -moz-transition: color 0.6s;
+  -o-transition: color 0.6s;
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+  display: inline-block;
+  width: 100%;
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 47, ../sass/modules/_site-header.scss */
+  .menu a {
+    font-size: 13px;
+  }
+}
+/* line 60, ../sass/modules/_site-header.scss */
+.menu a:hover, .menu a.drop-active, .menu a:active {
+  color: #20ddfd;
+}
+/* line 63, ../sass/modules/_site-header.scss */
+.menu a:hover:after, .menu a.drop-active:after, .menu a:active:after {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* line 68, ../sass/modules/_site-header.scss */
+.menu li {
+  text-align: center;
+  position: relative;
+}
+@media (min-width: 768px) {
+  /* line 68, ../sass/modules/_site-header.scss */
+  .menu li {
+    float: left;
+    padding-left: 20px;
+  }
+}
+@media (min-width: 992px) {
+  /* line 68, ../sass/modules/_site-header.scss */
+  .menu li {
+    float: left;
+    padding-left: 30px;
+  }
+}
+/* line 81, ../sass/modules/_site-header.scss */
+.menu > li:last-of-type ul {
+  right: 0;
+  left: auto;
+}
+/* line 84, ../sass/modules/_site-header.scss */
+.menu > li:last-of-type ul ul {
+  right: 101%;
+  left: auto;
+}
+/* line 92, ../sass/modules/_site-header.scss */
+.menu li:hover > a {
+  color: #20ddfd;
+}
+/* line 96, ../sass/modules/_site-header.scss */
+.menu li:hover > ul, .menu li.link-active1 > ul {
+  opacity: 1;
+  visibility: visible;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 104, ../sass/modules/_site-header.scss */
+.menu .is-dropdown > ul {
+  background: #203345;
+}
+/* line 107, ../sass/modules/_site-header.scss */
+.menu .is-dropdown > ul ul {
+  background: #2b445a;
+}
+/* line 112, ../sass/modules/_site-header.scss */
+.menu ul {
+  display: none;
+  z-index: 600;
+  font-size: 13px;
+  opacity: 1;
+}
+/* line 118, ../sass/modules/_site-header.scss */
+.menu ul a {
+  font-size: 14px;
+  padding: 15px 5px;
+}
+@media (min-width: 768px) {
+  /* line 112, ../sass/modules/_site-header.scss */
+  .menu ul {
+    -moz-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+    background: #162532;
+    position: absolute;
+    text-align: left;
+    min-width: 200px;
+    top: 50px;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    -moz-transform: translateY(50px);
+    -ms-transform: translateY(50px);
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+  }
+  /* line 137, ../sass/modules/_site-header.scss */
+  .menu ul a {
+    font-size: 12px;
+  }
+  /* line 141, ../sass/modules/_site-header.scss */
+  .menu ul li {
+    padding: 0px 0px  0px 35px;
+    display: block;
+    clear: both;
+    line-height: 20px;
+    margin: 0;
+    width: 100%;
+    text-align: left;
+  }
+  /* line 149, ../sass/modules/_site-header.scss */
+  .menu ul li:hover {
+    background: #0D1A25;
+  }
+  /* line 154, ../sass/modules/_site-header.scss */
+  .menu ul ul {
+    top: -15px;
+    left: 101%;
+  }
+}
+
+/* line 162, ../sass/modules/_site-header.scss */
+.nav-toggle {
+  display: none;
+  z-index: 30;
+  background: #162532;
+}
+/* line 168, ../sass/modules/_site-header.scss */
+.nav-toggle.nav-shown {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+@media (min-width: 768px) {
+  /* line 162, ../sass/modules/_site-header.scss */
+  .nav-toggle {
+    display: block !important;
+  }
+}
+
+/* line 177, ../sass/modules/_site-header.scss */
+.mobile-menu-icon {
+  position: absolute;
+  right: 20px;
+  top: 23px;
+  min-width: 30px;
+  min-height: 30px;
+  z-index: 50;
+  padding: 5px;
+  overflow: hidden;
+}
+/* line 186, ../sass/modules/_site-header.scss */
+.mobile-menu-icon a {
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: relative;
+}
+/* line 192, ../sass/modules/_site-header.scss */
+.mobile-menu-icon a span {
+  display: block;
+  width: 27px;
+  height: 2px;
+  background: #fff;
+  margin-bottom: 4px;
+  position: relative;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 205, ../sass/modules/_site-header.scss */
+.mobile-menu-icon a:hover span {
+  background-color: #20ddfd;
+}
+/* line 211, ../sass/modules/_site-header.scss */
+.mobile-menu-icon a.open span {
+  -moz-transform-origin: 0 50%;
+  -ms-transform-origin: 0 50%;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+}
+/* line 213, ../sass/modules/_site-header.scss */
+.mobile-menu-icon a.open span:nth-of-type(1) {
+  -moz-transform: rotate(45deg) translate(1px, -6px);
+  -ms-transform: rotate(45deg) translate(1px, -6px);
+  -webkit-transform: rotate(45deg) translate(1px, -6px);
+  transform: rotate(45deg) translate(1px, -6px);
+}
+/* line 216, ../sass/modules/_site-header.scss */
+.mobile-menu-icon a.open span:nth-of-type(2) {
+  opacity: 0;
+  -moz-transform: translate(100%);
+  -ms-transform: translate(100%);
+  -webkit-transform: translate(100%);
+  transform: translate(100%);
+}
+/* line 220, ../sass/modules/_site-header.scss */
+.mobile-menu-icon a.open span:nth-of-type(3) {
+  -moz-transform: rotate(-45deg) translate(1px, 6px);
+  -ms-transform: rotate(-45deg) translate(1px, 6px);
+  -webkit-transform: rotate(-45deg) translate(1px, 6px);
+  transform: rotate(-45deg) translate(1px, 6px);
+}
+
+/**
+-   Site Footer Styles -----------------------------------------
+**/
+/* line 2, ../sass/modules/_site-footer.scss */
+.section-offer {
+  background: #20ddfd;
+  font-family: "Raleway";
+  border-color: #20ddfd;
+  background: url("../Images/banner_05.jpg") no-repeat fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 50px 0;
+}
+@media (min-width: 768px) {
+  /* line 2, ../sass/modules/_site-footer.scss */
+  .section-offer {
+    padding: 150px 0;
+  }
+}
+/* line 13, ../sass/modules/_site-footer.scss */
+.section-offer h1 {
+  font-size: 45px;
+  text-align: center;
+  color: #fff;
+  margin: 0 auto 40px;
+}
+
+/* line 22, ../sass/modules/_site-footer.scss */
+.social-media {
+  background-image: url("../Images/section-social.jpg");
+  background-color: #080c11;
+  background-repeat: no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  border: none !important;
+}
+/* line 29, ../sass/modules/_site-footer.scss */
+.social-media .social-link {
+  color: #162532;
+  background: #fff;
+  display: block;
+  text-align: center;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  margin: 10px auto;
+  line-height: 40px;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+@media (min-width: 768px) {
+  /* line 29, ../sass/modules/_site-footer.scss */
+  .social-media .social-link {
+    font-size: 30px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    margin: 20px auto;
+  }
+}
+/* line 50, ../sass/modules/_site-footer.scss */
+.social-media .social-link:hover {
+  color: #20ddfd;
+}
+
+/* line 57, ../sass/modules/_site-footer.scss */
+.footer-top {
+  background: #1f1f1f;
+  color: #d5d5d5;
+  font-family: "Raleway";
+}
+/* line 62, ../sass/modules/_site-footer.scss */
+.footer-top .fo-title {
+  font-weight: 600;
+  font-size: 16px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+/* line 70, ../sass/modules/_site-footer.scss */
+.footer-top p, .footer-top a {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 500;
+}
+/* line 76, ../sass/modules/_site-footer.scss */
+.footer-top .mem-social {
+  border: none;
+  padding: 0;
+}
+/* line 80, ../sass/modules/_site-footer.scss */
+.footer-top .mem-social a {
+  margin-right: 20px;
+  color: #20ddfd;
+}
+/* line 86, ../sass/modules/_site-footer.scss */
+.footer-top .fo-nav a {
+  display: block;
+  margin-bottom: 10px;
+  color: #d5d5d5;
+  text-transform: capitalize;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 92, ../sass/modules/_site-footer.scss */
+.footer-top .fo-nav a:hover {
+  color: #20ddfd;
+}
+/* line 99, ../sass/modules/_site-footer.scss */
+.footer-top .fo-tweet a {
+  color: #20ddfd;
+  margin: 10px 0;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 103, ../sass/modules/_site-footer.scss */
+.footer-top .fo-tweet a:hover {
+  color: #545454;
+}
+/* line 108, ../sass/modules/_site-footer.scss */
+.footer-top .fo-tweet span {
+  display: block;
+  margin: 10px 0;
+}
+/* line 114, ../sass/modules/_site-footer.scss */
+.footer-top .fo-instagram {
+  overflow: hidden;
+  display: block;
+  margin-top: 20px;
+}
+/* line 119, ../sass/modules/_site-footer.scss */
+.footer-top .fo-instagram li {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  width: 70px;
+  height: 70px;
+  overflow: hidden;
+  position: relative;
+  display: block;
+}
+/* line 128, ../sass/modules/_site-footer.scss */
+.footer-top .fo-instagram li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+/* line 133, ../sass/modules/_site-footer.scss */
+.footer-top .fo-instagram li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(32, 221, 253, 0.4);
+  top: 0;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+  z-index: 1;
+}
+/* line 147, ../sass/modules/_site-footer.scss */
+.footer-top .fo-instagram li a:hover:after {
+  opacity: 1;
+}
+/* line 152, ../sass/modules/_site-footer.scss */
+.footer-top .fo-instagram li img {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 159, ../sass/modules/_site-footer.scss */
+.footer-bottom {
+  background: #131313;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: "Raleway";
+  padding: 20px 15px;
+}
+/* line 166, ../sass/modules/_site-footer.scss */
+.footer-bottom .fa {
+  color: #20ddfd;
+  margin: 0 3px;
+}
+/* line 170, ../sass/modules/_site-footer.scss */
+.footer-bottom .copyright {
+  font-size: 12px;
+}
+
+/**
+-  Site Sections Styles -----------------------------------------
+**/
+/* line 2, ../sass/modules/_site-section.scss */
+.section {
+  padding: 30px 0;
+  border: none !important;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  /* line 2, ../sass/modules/_site-section.scss */
+  .section {
+    padding: 50px 0;
+  }
+}
+
+/**
+-  Site Buttons Styles -----------------------------------------
+**/
+/* line 3, ../sass/modules/_site-buttons.scss */
+.btn {
+  width: 175px;
+  display: block;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none !important;
+  margin: 15px auto;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  font-family: "Raleway";
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 18, ../sass/modules/_site-buttons.scss */
+.btn:hover {
+  text-decoration: none !important;
+  color: #fff;
+}
+/* line 23, ../sass/modules/_site-buttons.scss */
+.btn.btn-blm {
+  background-color: #162532;
+  border: 1px solid #162532;
+}
+/* line 26, ../sass/modules/_site-buttons.scss */
+.btn.btn-blm:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #162532;
+}
+/* line 32, ../sass/modules/_site-buttons.scss */
+.btn.btn-bl {
+  background-color: #20ddfd;
+  border: 1px solid #20ddfd;
+}
+/* line 35, ../sass/modules/_site-buttons.scss */
+.btn.btn-bl:hover {
+  background-color: #162532;
+  border: 1px solid #162532;
+}
+/* line 40, ../sass/modules/_site-buttons.scss */
+.btn.btn-tran {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+/* line 43, ../sass/modules/_site-buttons.scss */
+.btn.btn-tran:hover {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #162532;
+}
+/* line 49, ../sass/modules/_site-buttons.scss */
+.btn.btn-tran-blm {
+  background-color: transparent;
+  border: 1px solid #162532;
+  color: #162532;
+}
+/* line 53, ../sass/modules/_site-buttons.scss */
+.btn.btn-tran-blm:hover {
+  background-color: #162532;
+  border: 1px solid #162532;
+  color: #fff;
+}
+/* line 59, ../sass/modules/_site-buttons.scss */
+.btn.btn-gra {
+  background-color: #ebebeb;
+  border: 1px solid #ebebeb;
+  color: #162532;
+}
+/* line 63, ../sass/modules/_site-buttons.scss */
+.btn.btn-gra:hover {
+  background-color: #162532;
+  border: 1px solid #162532;
+}
+/* line 68, ../sass/modules/_site-buttons.scss */
+.btn.btn-gra-lgh {
+  background-color: #616161;
+  border: 1px solid #616161;
+  color: #162532;
+}
+/* line 72, ../sass/modules/_site-buttons.scss */
+.btn.btn-gra-lgh:hover {
+  background-color: #162532;
+  border: 1px solid #162532;
+}
+/* line 77, ../sass/modules/_site-buttons.scss */
+.btn.btn-wh {
+  background-color: #fff;
+  border: 1px solid #fff;
+  color: #162532;
+}
+/* line 81, ../sass/modules/_site-buttons.scss */
+.btn.btn-wh:hover {
+  background-color: #20ddfd;
+  color: #fff;
+  border: 1px solid #20ddfd;
+}
+
+/* line 88, ../sass/modules/_site-buttons.scss */
+.btns-row {
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 25px;
+}
+/* line 92, ../sass/modules/_site-buttons.scss */
+.btns-row .btn {
+  display: inline-block;
+  margin: 15px 10px;
+}
+
+/**
+-  Site Icons Styles -----------------------------------------
+**/
+/* line 1, ../sass/modules/_site-icons.scss */
+.circle-icon {
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  border: 1px solid #162532;
+  color: #162532;
+  font-size: 22px;
+  margin: 0 auto 20px;
+  font-family: "Raleway";
+}
+
+/* line 13, ../sass/modules/_site-icons.scss */
+.font-icon {
+  display: block;
+  font-size: 30px;
+  color: #20ddfd;
+}
+
+/* line 20, ../sass/modules/_site-icons.scss */
+.share-icons span, .share-icons a {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  background: transparent;
+  margin-left: 10px;
+  color: #162532;
+  font-size: 16px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 33, ../sass/modules/_site-icons.scss */
+.share-icons span:hover, .share-icons a:hover {
+  color: #20ddfd;
+}
+
+/**
+-  Site Blockquotes -----------------------------------------
+**/
+/* line 1, ../sass/modules/_blockquote.scss */
+blockquote {
+  color: #162532;
+  font-family: "Raleway";
+  font-style: italic;
+  font-size: 16px;
+  margin: 50px 0;
+  padding: 30px 0 30px 30px;
+  border-left: 5px solid #20ddfd;
+  line-height: 30px;
+  font-weight: 700;
+}
+
+/* line 12, ../sass/modules/_blockquote.scss */
+cite {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Raleway";
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+/* line 18, ../sass/modules/_blockquote.scss */
+cite:before {
+  content: " - ";
+}
+
+/* line 23, ../sass/modules/_blockquote.scss */
+.blockquote {
+  margin: 20px 0;
+}
+/* line 26, ../sass/modules/_blockquote.scss */
+.blockquote.b-bl {
+  color: #20ddfd;
+  border-left: 6px solid #162532;
+}
+/* line 31, ../sass/modules/_blockquote.scss */
+.blockquote.b-blm {
+  color: #162532;
+  border-left: 6px solid #162532;
+}
+/* line 36, ../sass/modules/_blockquote.scss */
+.blockquote.b-gr {
+  color: #616161;
+  border-left: 6px solid #616161;
+}
+
+/**
+-  Site Heading -----------------------------------------
+**/
+/* line 1, ../sass/modules/_site-heading.scss */
+h1, h2, h3, .item-desc h4, h4, h5, h6 {
+  font-family: "Raleway";
+  letter-spacing: 1px;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+/* line 9, ../sass/modules/_site-heading.scss */
+.title-block {
+  text-align: center;
+  margin: 45px auto 70px;
+  padding: 0 15px;
+}
+/* line 13, ../sass/modules/_site-heading.scss */
+.title-block.title-left {
+  text-align: left;
+  padding: 0;
+  margin: 45px auto;
+}
+/* line 18, ../sass/modules/_site-heading.scss */
+.title-block.title-left .title-big:after {
+  margin: 15px 0;
+}
+/* line 21, ../sass/modules/_site-heading.scss */
+.title-block.title-left .sub-title {
+  width: 100%;
+  margin-bottom: 20px;
+}
+/* line 27, ../sass/modules/_site-heading.scss */
+.title-block.title-sub {
+  margin: 45px auto 64px;
+}
+
+/* line 33, ../sass/modules/_site-heading.scss */
+.title-big {
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #162532;
+  font-size: 26px;
+  margin-bottom: 25px;
+}
+/* line 42, ../sass/modules/_site-heading.scss */
+.title-big:after {
+  content: "";
+  width: 25px;
+  display: block;
+  margin: 15px auto;
+  background: #162532;
+  height: 3px;
+}
+/* line 51, ../sass/modules/_site-heading.scss */
+.title-big.title-bl {
+  color: #20ddfd;
+}
+/* line 53, ../sass/modules/_site-heading.scss */
+.title-big.title-bl:after {
+  background: #20ddfd;
+}
+/* line 58, ../sass/modules/_site-heading.scss */
+.title-big.title-blm {
+  color: #162532;
+}
+/* line 60, ../sass/modules/_site-heading.scss */
+.title-big.title-blm:after {
+  background: #162532;
+}
+/* line 65, ../sass/modules/_site-heading.scss */
+.title-big.title-blg {
+  color: #616161;
+}
+/* line 67, ../sass/modules/_site-heading.scss */
+.title-big.title-blg:after {
+  background: #616161;
+}
+
+/* line 72, ../sass/modules/_site-heading.scss */
+.sub-title {
+  color: #616161;
+  font-size: 16px;
+  font-family: "Raleway";
+  line-height: 26px;
+  margin: 0 auto 15px;
+}
+/* line 79, ../sass/modules/_site-heading.scss */
+.sub-title.sub-title-bl {
+  color: #20ddfd;
+}
+/* line 82, ../sass/modules/_site-heading.scss */
+.sub-title.sub-title-blm {
+  color: #162532;
+}
+/* line 85, ../sass/modules/_site-heading.scss */
+.sub-title.sub-title-gr {
+  color: #616161;
+}
+@media (min-width: 768px) {
+  /* line 72, ../sass/modules/_site-heading.scss */
+  .sub-title {
+    width: 60%;
+  }
+}
+
+/* line 93, ../sass/modules/_site-heading.scss */
+h1 {
+  font-size: 26px;
+}
+/* line 96, ../sass/modules/_site-heading.scss */
+h1.h-bl {
+  color: #20ddfd;
+}
+/* line 99, ../sass/modules/_site-heading.scss */
+h1.h-blm {
+  color: #162532;
+}
+/* line 102, ../sass/modules/_site-heading.scss */
+h1.h-gr {
+  color: #616161;
+}
+
+/* line 106, ../sass/modules/_site-heading.scss */
+h2 {
+  font-size: 24px;
+}
+/* line 109, ../sass/modules/_site-heading.scss */
+h2.h-bl {
+  color: #20ddfd;
+}
+/* line 112, ../sass/modules/_site-heading.scss */
+h2.h-blm {
+  color: #162532;
+}
+/* line 115, ../sass/modules/_site-heading.scss */
+h2.h-gr {
+  color: #616161;
+}
+
+/* line 119, ../sass/modules/_site-heading.scss */
+h3, .item-desc h4 {
+  font-size: 22px;
+}
+/* line 122, ../sass/modules/_site-heading.scss */
+h3.h-bl, .item-desc h4.h-bl {
+  color: #20ddfd;
+}
+/* line 125, ../sass/modules/_site-heading.scss */
+h3.h-blm, .item-desc h4.h-blm {
+  color: #162532;
+}
+/* line 128, ../sass/modules/_site-heading.scss */
+h3.h-gr, .item-desc h4.h-gr {
+  color: #616161;
+}
+
+/* line 132, ../sass/modules/_site-heading.scss */
+h4 {
+  font-size: 20px;
+}
+/* line 135, ../sass/modules/_site-heading.scss */
+h4.h-bl {
+  color: #20ddfd;
+}
+/* line 138, ../sass/modules/_site-heading.scss */
+h4.h-blm {
+  color: #162532;
+}
+/* line 141, ../sass/modules/_site-heading.scss */
+h4.h-gr {
+  color: #616161;
+}
+
+/* line 145, ../sass/modules/_site-heading.scss */
+h5 {
+  font-size: 18px;
+}
+/* line 148, ../sass/modules/_site-heading.scss */
+h5.h-bl {
+  color: #20ddfd;
+}
+/* line 151, ../sass/modules/_site-heading.scss */
+h5.h-blm {
+  color: #162532;
+}
+/* line 154, ../sass/modules/_site-heading.scss */
+h5.h-gr {
+  color: #616161;
+}
+
+/* line 158, ../sass/modules/_site-heading.scss */
+h6 {
+  font-size: 16px;
+}
+/* line 161, ../sass/modules/_site-heading.scss */
+h6.h-bl {
+  color: #20ddfd;
+}
+/* line 164, ../sass/modules/_site-heading.scss */
+h6.h-blm {
+  color: #162532;
+}
+/* line 167, ../sass/modules/_site-heading.scss */
+h6.h-gr {
+  color: #616161;
+}
+
+/**
+-  Site Links -----------------------------------------
+**/
+/* line 1, ../sass/modules/_site-links.scss */
+.link {
+  font-family: "Roboto";
+  letter-spacing: 0.6px;
+  font-size: 16px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  -moz-transition: color 0.6s;
+  -o-transition: color 0.6s;
+  -webkit-transition: color 0.6s;
+  transition: color 0.6s;
+}
+
+/* line 13, ../sass/modules/_site-links.scss */
+.link:hover {
+  text-decoration: none;
+  color: #616161;
+}
+/* line 17, ../sass/modules/_site-links.scss */
+.link.link-bl {
+  color: #20ddfd;
+}
+/* line 19, ../sass/modules/_site-links.scss */
+.link.link-bl:hover {
+  color: #162532;
+}
+/* line 24, ../sass/modules/_site-links.scss */
+.link.link-blm {
+  color: #162532;
+}
+/* line 26, ../sass/modules/_site-links.scss */
+.link.link-blm:hover {
+  color: #20ddfd;
+}
+/* line 31, ../sass/modules/_site-links.scss */
+.link.link-gr {
+  color: #616161;
+}
+/* line 33, ../sass/modules/_site-links.scss */
+.link.link-gr:hover {
+  color: #162532;
+}
+
+/**
+-   Pages Header Styles -----------------------------------------
+**/
+/* line 1, ../sass/modules/_pages-header.scss */
+.page-header {
+  min-height: 350px;
+  position: relative;
+  background: url(../Images/pages-head.jpg) no-repeat 50% 50%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  color: #fff;
+  border: none;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/modules/_pages-header.scss */
+  .page-header {
+    min-height: 450px;
+  }
+}
+
+/* line 14, ../sass/modules/_pages-header.scss */
+.head-overlayer {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 23, ../sass/modules/_pages-header.scss */
+.head-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 32, ../sass/modules/_pages-header.scss */
+.head-title {
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  /* line 32, ../sass/modules/_pages-header.scss */
+  .head-title {
+    font-size: 35px;
+  }
+}
+
+/* line 43, ../sass/modules/_pages-header.scss */
+.head-subtitle {
+  font-family: "Raleway";
+  font-weight: 500;
+  text-align: center;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+@media (min-width: 768px) {
+  /* line 43, ../sass/modules/_pages-header.scss */
+  .head-subtitle {
+    font-size: 20px;
+  }
+}
+
+/**
+-  Home Slider Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_slider.scss */
+.section-slider {
+  width: 100%;
+  position: relative;
+  text-align: center;
+  color: #fff;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  overflow: hidden;
+}
+/* line 9, ../sass/pages/home/_slider.scss */
+.section-slider:hover .flex-direction-nav {
+  opacity: 1;
+  visibility: visible;
+}
+/* line 12, ../sass/pages/home/_slider.scss */
+.section-slider:hover .flex-direction-nav li {
+  -moz-transform: translateX(0);
+  -ms-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  transform: translateX(0);
+}
+/* line 18, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav {
+  z-index: 100;
+  position: absolute;
+  display: block;
+  top: 50%;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Raleway";
+  font-size: 13px;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+  visibility: hidden;
+}
+/* line 32, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav li {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #fff;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 38, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav li:hover {
+  background: #fff;
+}
+/* line 43, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav .flex-nav-prev {
+  float: left;
+  left: 10px;
+  -moz-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+/* line 49, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav .flex-nav-next {
+  float: right;
+  right: 10px;
+  -moz-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -webkit-transform: translateX(100%);
+  transform: translateX(100%);
+}
+/* line 55, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav a {
+  color: #fff;
+  z-index: 100;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 8px 18px;
+}
+/* line 63, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav a .fa {
+  font-size: 30px;
+}
+/* line 66, ../sass/pages/home/_slider.scss */
+.section-slider .flex-direction-nav a:hover {
+  color: #162532;
+  background-color: #fff;
+}
+/* line 73, ../sass/pages/home/_slider.scss */
+.section-slider .slides {
+  height: 100%;
+}
+/* line 76, ../sass/pages/home/_slider.scss */
+.section-slider .slides img {
+  display: none;
+}
+/* line 80, ../sass/pages/home/_slider.scss */
+.section-slider .slides li {
+  background: url(../Images/banner_02.jpg) no-repeat center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  z-index: 1;
+  min-height: 400px;
+  overflow: hidden;
+  height: 100%;
+}
+/* line 90, ../sass/pages/home/_slider.scss */
+.section-slider .slides li:before {
+  content: " ";
+  background-color: rgba(0, 0, 0, 0.4);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+/* line 100, ../sass/pages/home/_slider.scss */
+.section-slider .slide-title {
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 15px auto;
+  -moz-transform: translateY(-100px);
+  -ms-transform: translateY(-100px);
+  -webkit-transform: translateY(-100px);
+  transform: translateY(-100px);
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  opacity: 0;
+}
+@media (min-width: 768px) {
+  /* line 100, ../sass/pages/home/_slider.scss */
+  .section-slider .slide-title {
+    margin: 30px auto;
+    font-size: 35px;
+    width: 60%;
+  }
+}
+/* line 116, ../sass/pages/home/_slider.scss */
+.section-slider .slide-description {
+  font-size: 16px;
+  font-family: "Raleway";
+  margin: 15px auto;
+  -moz-transform: rotateX(90deg);
+  -webkit-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  opacity: 0;
+  transform-style: preserve-3d;
+}
+@media (min-width: 768px) {
+  /* line 116, ../sass/pages/home/_slider.scss */
+  .section-slider .slide-description {
+    margin: 30px auto;
+    font-size: 20px;
+  }
+}
+/* line 134, ../sass/pages/home/_slider.scss */
+.section-slider .btns-row a {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  opacity: 0;
+}
+/* line 143, ../sass/pages/home/_slider.scss */
+.section-slider .slide-animate .slide-title {
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+  opacity: 1;
+}
+/* line 147, ../sass/pages/home/_slider.scss */
+.section-slider .slide-animate .slide-description {
+  -moz-transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  transform: rotateX(0deg);
+  opacity: 1;
+}
+/* line 152, ../sass/pages/home/_slider.scss */
+.section-slider .slide-animate .btns-row a {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+  opacity: 1;
+}
+
+/**
+-   Home/Page About Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_about.scss */
+.section-about {
+  font-family: "Raleway";
+  font-size: 16px;
+  padding-bottom: 50px;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/pages/home/_about.scss */
+  .section-about {
+    padding-bottom: 70px;
+  }
+}
+
+/* line 11, ../sass/pages/home/_about.scss */
+.about-info {
+  margin-bottom: 60px;
+}
+/* line 13, ../sass/pages/home/_about.scss */
+.about-info p {
+  margin-bottom: 18px;
+  color: #616161;
+}
+
+/* line 18, ../sass/pages/home/_about.scss */
+.about-title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #162532;
+  margin-bottom: 30px;
+}
+
+/* line 26, ../sass/pages/home/_about.scss */
+.about-slide {
+  background: #000;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+  height: 260px;
+}
+@media (min-width: 768px) {
+  /* line 26, ../sass/pages/home/_about.scss */
+  .about-slide {
+    height: 350px;
+  }
+}
+
+/* line 38, ../sass/pages/home/_about.scss */
+.about-img {
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  /* line 38, ../sass/pages/home/_about.scss */
+  .about-img {
+    height: 100%;
+  }
+}
+/* line 43, ../sass/pages/home/_about.scss */
+.about-img img {
+  width: 100%;
+  height: 100%;
+  min-height: 260px;
+}
+@media (min-width: 768px) {
+  /* line 43, ../sass/pages/home/_about.scss */
+  .about-img img {
+    min-height: 350px;
+  }
+}
+
+/* line 56, ../sass/pages/home/_about.scss */
+.about-features .feature-desc {
+  padding-left: 75px;
+}
+
+/* line 61, ../sass/pages/home/_about.scss */
+.feature-icon {
+  position: relative;
+  overflow: hidden;
+  z-index: 2;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  font-size: 25px;
+  margin: 0px 0 20px;
+}
+/* line 69, ../sass/pages/home/_about.scss */
+.feature-icon .fa {
+  position: relative;
+  z-index: 10;
+}
+/* line 75, ../sass/pages/home/_about.scss */
+.feature-icon:after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  background-color: #20ddfd;
+  z-index: 1;
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+}
+
+/* line 94, ../sass/pages/home/_about.scss */
+.feature-title {
+  color: #162532;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: 700;
+  height: 60px;
+  position: relative;
+  padding-left: 75px;
+  margin-bottom: 0px;
+}
+/* line 104, ../sass/pages/home/_about.scss */
+.feature-title:after {
+  content: "";
+  width: 25px;
+  height: 1px;
+  background: #162532;
+  position: absolute;
+  left: 75px;
+  top: 35px;
+  display: block;
+}
+/* line 115, ../sass/pages/home/_about.scss */
+.feature-title .feature-icon {
+  position: absolute;
+  margin: 0;
+  left: 0;
+  top: 0;
+  border-color: #162532;
+}
+/* line 124, ../sass/pages/home/_about.scss */
+.feature-title:hover .feature-icon {
+  color: #fff;
+  border-color: #20ddfd;
+}
+/* line 127, ../sass/pages/home/_about.scss */
+.feature-title:hover .feature-icon:after {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+/* line 132, ../sass/pages/home/_about.scss */
+.feature-title.feature-left {
+  padding-left: 0;
+}
+/* line 134, ../sass/pages/home/_about.scss */
+.feature-title.feature-left .fa {
+  font-size: 40px;
+}
+/* line 137, ../sass/pages/home/_about.scss */
+.feature-title.feature-left span {
+  margin-right: 10px;
+}
+/* line 140, ../sass/pages/home/_about.scss */
+.feature-title.feature-left:after {
+  display: none;
+}
+
+/* line 147, ../sass/pages/home/_about.scss */
+.feature-desc {
+  font-size: 15px;
+  color: #616161;
+  margin-bottom: 30px;
+  line-height: 25px;
+}
+
+/* line 155, ../sass/pages/home/_about.scss */
+.about-carousel {
+  overflow: hidden;
+}
+
+/* line 158, ../sass/pages/home/_about.scss */
+.carousel-img {
+  width: 100%;
+  position: relative;
+}
+/* line 162, ../sass/pages/home/_about.scss */
+.carousel-img img {
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+/* line 168, ../sass/pages/home/_about.scss */
+.carousel-link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(255, 255, 255, 0);
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 176, ../sass/pages/home/_about.scss */
+.carousel-link:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+/**
+-   Home/Page Team Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_team.scss */
+.section-team {
+  background: #fafafa;
+  padding-bottom: 50px;
+  border-color: #fafafa;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/pages/home/_team.scss */
+  .section-team {
+    padding-bottom: 70px;
+  }
+}
+
+/* line 10, ../sass/pages/home/_team.scss */
+.team-member {
+  max-width: 350px;
+  margin: 0 auto;
+  font-size: 16px;
+  font-family: "Raleway";
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+@media (min-width: 768px) {
+  /* line 10, ../sass/pages/home/_team.scss */
+  .team-member {
+    width: 100%;
+    margin: auto;
+  }
+}
+/* line 22, ../sass/pages/home/_team.scss */
+.team-member:hover img {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+/* line 30, ../sass/pages/home/_team.scss */
+.team-member:hover .mem-social {
+  border-top: 1px solid #20ddfd;
+}
+
+/* line 36, ../sass/pages/home/_team.scss */
+.mem-pic {
+  overflow: hidden;
+  margin-bottom: 20px;
+  text-align: center;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  position: relative;
+}
+/* line 43, ../sass/pages/home/_team.scss */
+.mem-pic img {
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+  width: 100%;
+  height: auto;
+}
+/* line 49, ../sass/pages/home/_team.scss */
+.mem-pic:after, .mem-pic:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(32, 221, 253, 0.1);
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  z-index: 1;
+}
+/* line 61, ../sass/pages/home/_team.scss */
+.mem-pic:before {
+  -moz-transform: translate(100%, 100%);
+  -ms-transform: translate(100%, 100%);
+  -webkit-transform: translate(100%, 100%);
+  transform: translate(100%, 100%);
+}
+/* line 65, ../sass/pages/home/_team.scss */
+.mem-pic:after {
+  -moz-transform: translate(-100%, -100%);
+  -ms-transform: translate(-100%, -100%);
+  -webkit-transform: translate(-100%, -100%);
+  transform: translate(-100%, -100%);
+}
+/* line 70, ../sass/pages/home/_team.scss */
+.mem-pic:hover:before, .mem-pic:hover:after {
+  -moz-transform: translate(0%, 0%);
+  -ms-transform: translate(0%, 0%);
+  -webkit-transform: translate(0%, 0%);
+  transform: translate(0%, 0%);
+}
+/* line 73, ../sass/pages/home/_team.scss */
+.mem-pic:hover .mem-quote {
+  opacity: 1;
+}
+
+/* line 79, ../sass/pages/home/_team.scss */
+.mem-quote {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(32, 221, 253, 0.6);
+  color: #fff;
+  font-style: italic;
+  font-size: 18px;
+  font-family: "Raleway";
+  z-index: 2;
+  opacity: 0;
+  -moz-transition: opacity 0.6s linear 0.1s;
+  -o-transition: opacity 0.6s linear 0.1s;
+  -webkit-transition: opacity 0.6s linear;
+  -webkit-transition-delay: 0.1s;
+  transition: opacity 0.6s linear 0.1s;
+}
+
+/* line 94, ../sass/pages/home/_team.scss */
+.mem-name {
+  text-transform: uppercase;
+  color: #162532;
+  font-weight: 700;
+  margin-bottom: 5px;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-size: 16px;
+}
+/* line 101, ../sass/pages/home/_team.scss */
+.mem-name:hover {
+  color: #20ddfd;
+}
+
+/* line 106, ../sass/pages/home/_team.scss */
+.mem-post {
+  font-size: 13px;
+  text-transform: capitalize;
+  color: #616161;
+  margin-bottom: 10px;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+/* line 114, ../sass/pages/home/_team.scss */
+.mem-social {
+  margin-bottom: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #e5e5e5;
+  margin-top: 20px;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 121, ../sass/pages/home/_team.scss */
+.mem-social a {
+  color: #616161;
+  margin-right: 10px;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 125, ../sass/pages/home/_team.scss */
+.mem-social a:hover {
+  color: #20ddfd;
+}
+
+/* line 130, ../sass/pages/home/_team.scss */
+.mem-biou {
+  color: #616161;
+  font-size: 14px;
+  font-family: "Raleway";
+  line-height: 26px;
+  margin-bottom: 20px;
+  min-height: 80px;
+}
+
+/* line 140, ../sass/pages/home/_team.scss */
+.team-skills {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+/* line 146, ../sass/pages/home/_team.scss */
+.skills-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  background: #000;
+  padding-bottom: 50%;
+  background-position: 50% 50%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+@media (min-width: 992px) {
+  /* line 146, ../sass/pages/home/_team.scss */
+  .skills-img {
+    position: absolute;
+    width: 50%;
+  }
+}
+
+/* line 162, ../sass/pages/home/_team.scss */
+.skills-img-left .skills-img {
+  left: 0;
+}
+
+/* line 167, ../sass/pages/home/_team.scss */
+.skills-img-right .skills-img {
+  right: 0;
+}
+/* line 171, ../sass/pages/home/_team.scss */
+.skills-img-right .skills-info {
+  padding: 0;
+}
+
+/* line 176, ../sass/pages/home/_team.scss */
+.skills-side {
+  font-size: 18px;
+  color: #162532;
+}
+/* line 179, ../sass/pages/home/_team.scss */
+.skills-side h2 {
+  margin-bottom: 20px;
+}
+/* line 182, ../sass/pages/home/_team.scss */
+.skills-side span {
+  color: #20ddfd;
+  text-transform: uppercase;
+  display: block;
+  font-size: 30px;
+}
+
+/* line 192, ../sass/pages/home/_team.scss */
+.skills-list {
+  padding-top: 10px;
+}
+
+/* line 196, ../sass/pages/home/_team.scss */
+.sk-subtitle {
+  color: #616161;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+/* line 204, ../sass/pages/home/_team.scss */
+.skills-info {
+  margin: 80px auto;
+}
+@media (min-width: 992px) {
+  /* line 204, ../sass/pages/home/_team.scss */
+  .skills-info {
+    padding: 0 30px;
+  }
+}
+
+/* line 211, ../sass/pages/home/_team.scss */
+.skill-title {
+  font-family: "Raleway";
+  font-weight: 700;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #162532;
+  margin-bottom: 15px;
+}
+
+/* line 220, ../sass/pages/home/_team.scss */
+.progress-bar {
+  width: 100%;
+  height: 5px;
+  background-color: #ededed;
+  margin-bottom: 30px;
+}
+
+/* line 226, ../sass/pages/home/_team.scss */
+.progress {
+  width: 0%;
+  height: 100%;
+  background-color: #20ddfd;
+  display: block;
+  position: relative;
+}
+
+/* line 236, ../sass/pages/home/_team.scss */
+.progress-per {
+  color: #162532;
+  font-family: "Roboto";
+  font-weight: 700;
+  position: absolute;
+  right: -20px;
+  top: -30px;
+}
+
+/* line 245, ../sass/pages/home/_team.scss */
+.team-sk {
+  position: relative;
+  padding-left: 55px;
+  margin-bottom: 40px;
+}
+
+/* line 250, ../sass/pages/home/_team.scss */
+.sk-icon {
+  position: absolute;
+  left: 0;
+  top: -7px;
+  color: #20ddfd;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+/**
+-   Home/Page Fun Facts Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_funinfo.scss */
+.section-funinfo {
+  background: url(https://ww2.sinaimg.cn/large/a15b4afegy1fprvptoihdj21rw0ufta9.jpg) no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  position: relative;
+  color: #fff;
+  font-family: "Raleway";
+  text-align: center;
+  padding: 80px 0;
+  border: none;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/pages/home/_funinfo.scss */
+  .section-funinfo {
+    padding: 110px 0;
+  }
+}
+
+/* line 15, ../sass/pages/home/_funinfo.scss */
+.count-block {
+  margin: 30px auto;
+  padding-top: 3px;
+}
+
+/* line 20, ../sass/pages/home/_funinfo.scss */
+.count-icon {
+  color: #20ddfd;
+  margin-bottom: 5px;
+  font-size: 24px;
+  line-height: 65px;
+  font-weight: 700;
+  font-size: 50px;
+}
+
+/* line 29, ../sass/pages/home/_funinfo.scss */
+.count-amount {
+  font-size: 45px;
+  font-weight: 300;
+}
+
+/* line 34, ../sass/pages/home/_funinfo.scss */
+.count-name {
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+/**
+-   Home/Page Services Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_services.scss */
+.section-services {
+  font-family: "Raleway";
+}
+
+/* line 6, ../sass/pages/home/_services.scss */
+.service-center {
+  text-align: center;
+}
+/* line 8, ../sass/pages/home/_services.scss */
+.service-center .circle-icon {
+  margin: 0px auto 20px;
+  color: #fff;
+  border-color: #20ddfd;
+  width: 70px;
+  height: 70px;
+  line-height: 70px;
+  background-color: transparent;
+}
+/* line 17, ../sass/pages/home/_services.scss */
+.service-center .circle-icon:after {
+  background-color: #20ddfd;
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+/* line 23, ../sass/pages/home/_services.scss */
+.service-center:hover .circle-icon {
+  color: #20ddfd;
+  border-color: #162532 !important;
+}
+/* line 26, ../sass/pages/home/_services.scss */
+.service-center:hover .circle-icon:after {
+  -moz-transform: scale(0, 0);
+  -ms-transform: scale(0, 0);
+  -webkit-transform: scale(0, 0);
+  transform: scale(0, 0);
+}
+
+/* line 33, ../sass/pages/home/_services.scss */
+.service-left:hover .circle-icon {
+  border-color: #20ddfd;
+  color: #fff;
+}
+/* line 36, ../sass/pages/home/_services.scss */
+.service-left:hover .circle-icon:after {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+
+/* line 42, ../sass/pages/home/_services.scss */
+.serv-title {
+  text-transform: uppercase;
+  color: #162532;
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* line 49, ../sass/pages/home/_services.scss */
+.serv-desc {
+  font-size: 15px;
+  color: #616161;
+  margin-bottom: 45px;
+}
+
+/* line 56, ../sass/pages/home/_services.scss */
+.section-pricing {
+  background-color: #fafafa;
+  font-family: "Raleway";
+  color: #616161;
+  font-size: 16px;
+  line-height: 25px;
+  border-color: #fafafa;
+}
+
+/* line 66, ../sass/pages/home/_services.scss */
+.pricing-tab {
+  border: 1px solid #ebebeb;
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: 5px;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+/* line 73, ../sass/pages/home/_services.scss */
+.pricing-tab:hover, .pricing-tab.active {
+  border-color: #20ddfd;
+}
+/* line 76, ../sass/pages/home/_services.scss */
+.pricing-tab:hover .package-title, .pricing-tab.active .package-title {
+  border-color: #20ddfd;
+}
+/* line 79, ../sass/pages/home/_services.scss */
+.pricing-tab:hover .package-price, .pricing-tab.active .package-price {
+  border-color: #20ddfd;
+  color: #fff;
+  background: #20ddfd;
+}
+/* line 85, ../sass/pages/home/_services.scss */
+.pricing-tab:hover .package-advantage li, .pricing-tab.active .package-advantage li {
+  border-color: #20ddfd;
+}
+/* line 89, ../sass/pages/home/_services.scss */
+.pricing-tab:hover .btn, .pricing-tab.active .btn {
+  background-color: #20ddfd;
+  border: 1px solid #20ddfd;
+  color: #fff;
+}
+
+/* line 97, ../sass/pages/home/_services.scss */
+.package-title {
+  text-transform: uppercase;
+  color: #162532;
+  font-weight: 700;
+  font-size: 16px;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+
+/* line 107, ../sass/pages/home/_services.scss */
+.package-price {
+  font-size: 15px;
+  color: #162532;
+  background: #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0;
+  font-weight: 500;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+/* line 116, ../sass/pages/home/_services.scss */
+.package-price span {
+  font-size: 24px;
+}
+
+/* line 121, ../sass/pages/home/_services.scss */
+.package-advantage {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  color: #616161;
+  font-size: 14px;
+  text-transform: capitalize;
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+}
+/* line 129, ../sass/pages/home/_services.scss */
+.package-advantage span {
+  font-weight: 700;
+}
+/* line 132, ../sass/pages/home/_services.scss */
+.package-advantage li {
+  -moz-transition: inherit;
+  -o-transition: inherit;
+  -webkit-transition: inherit;
+  transition: inherit;
+  display: block;
+  border-bottom: 1px solid #ebebeb;
+  padding: 20px 0;
+}
+
+/**
+-   Home/Page Portfolio Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_work.scss */
+.section-items {
+  background: #fafafa;
+  border-color: #fafafa;
+  padding-bottom: 50px;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/pages/home/_work.scss */
+  .section-items {
+    padding-bottom: 70px;
+  }
+}
+
+/* line 10, ../sass/pages/home/_work.scss */
+.items-filter {
+  font-family: "Roboto";
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  margin-bottom: 40px;
+}
+@media (min-width: 768px) {
+  /* line 10, ../sass/pages/home/_work.scss */
+  .items-filter {
+    margin-bottom: 70px;
+  }
+}
+/* line 20, ../sass/pages/home/_work.scss */
+.items-filter span {
+  -moz-transition: inhert;
+  -o-transition: inhert;
+  -webkit-transition: inhert;
+  transition: inhert;
+  display: inline-block;
+  text-transform: uppercase;
+  font: "Roboto";
+  color: #616161;
+  padding: 3px 13px;
+  cursor: pointer;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fafafa;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+@media (min-width: 768px) {
+  /* line 20, ../sass/pages/home/_work.scss */
+  .items-filter span {
+    margin-right: 35px;
+  }
+}
+/* line 36, ../sass/pages/home/_work.scss */
+.items-filter span.active, .items-filter span:hover {
+  border-color: #20ddfd;
+  color: #20ddfd;
+}
+
+/* line 43, ../sass/pages/home/_work.scss */
+.item-block {
+  overflow: hidden;
+  margin-bottom: 30px;
+  position: relative;
+  font-family: "Raleway";
+  width: 100%;
+  max-height: 350px;
+}
+@media (min-width: 768px) {
+  /* line 43, ../sass/pages/home/_work.scss */
+  .item-block {
+    max-height: 100%;
+  }
+}
+/* line 54, ../sass/pages/home/_work.scss */
+.item-block:hover .item-desc {
+  opacity: 1;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 59, ../sass/pages/home/_work.scss */
+.item-block:hover h3, .item-block:hover .item-desc h4, .item-desc .item-block:hover h4, .item-block:hover h4, .item-block:hover a {
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 63, ../sass/pages/home/_work.scss */
+.item-block:hover img {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+/* line 68, ../sass/pages/home/_work.scss */
+.item-desc {
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  color: #162532;
+  text-transform: uppercase;
+  z-index: 10;
+}
+/* line 81, ../sass/pages/home/_work.scss */
+.item-desc.item-black {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* line 83, ../sass/pages/home/_work.scss */
+.item-desc.item-black h3, .item-desc.item-black h4, .item-desc.item-black h4 {
+  color: #fff;
+}
+/* line 87, ../sass/pages/home/_work.scss */
+.item-desc h3, .item-desc h4 {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -moz-transform: translateY(-120px);
+  -ms-transform: translateY(-120px);
+  -webkit-transform: translateY(-120px);
+  transform: translateY(-120px);
+}
+/* line 94, ../sass/pages/home/_work.scss */
+.item-desc h4 {
+  font-size: 12px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+/* line 101, ../sass/pages/home/_work.scss */
+.item-desc a {
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  -moz-transform: translateY(120px);
+  -ms-transform: translateY(120px);
+  -webkit-transform: translateY(120px);
+  transform: translateY(120px);
+  outline: none;
+}
+/* line 106, ../sass/pages/home/_work.scss */
+.item-desc .circle-icon {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  display: inline-block;
+  margin: 0 5px;
+  background: #fff;
+  border: 1px solid #fff;
+}
+/* line 114, ../sass/pages/home/_work.scss */
+.item-desc .circle-icon:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+/* line 119, ../sass/pages/home/_work.scss */
+.adjust-block {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+/* line 129, ../sass/pages/home/_work.scss */
+.item-img {
+  width: 100%;
+  height: 100%;
+}
+/* line 133, ../sass/pages/home/_work.scss */
+.item-img img {
+  width: 100% !important;
+  height: auto !important;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
+/* line 142, ../sass/pages/home/_work.scss */
+.page-portfolio {
+  padding-bottom: 100px;
+}
+
+/* line 148, ../sass/pages/home/_work.scss */
+.portfolio-nogutter .col-md-4, .portfolio-nogutter .col-md-12, .portfolio-nogutter .col-md-3, .portfolio-nogutter .col-md-6 {
+  padding: 0 !important;
+}
+/* line 151, ../sass/pages/home/_work.scss */
+.portfolio-nogutter .item-block {
+  margin-bottom: 0;
+}
+
+/* line 159, ../sass/pages/home/_work.scss */
+.next-prev {
+  position: relative;
+  text-align: center;
+  font-size: 30px;
+  color: #162532;
+  margin: 30px auto;
+}
+/* line 166, ../sass/pages/home/_work.scss */
+.next-prev a {
+  color: inherit;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+}
+/* line 175, ../sass/pages/home/_work.scss */
+.next-prev a:hover {
+  color: #20ddfd;
+}
+
+/* line 181, ../sass/pages/home/_work.scss */
+.prev-proj {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #162532;
+}
+
+/* line 188, ../sass/pages/home/_work.scss */
+.next-proj {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: 1px solid #162532;
+}
+
+/* line 194, ../sass/pages/home/_work.scss */
+.back-proj {
+  font-size: 20px;
+  padding-top: 3px;
+}
+
+/* line 201, ../sass/pages/home/_work.scss */
+.single-portfolio {
+  overflow: hidden;
+  padding-top: 110px;
+  padding-bottom: 100px;
+}
+
+/* line 206, ../sass/pages/home/_work.scss */
+.slider-portfolio {
+  overflow: hidden;
+  max-height: 600px;
+  margin-bottom: 70px;
+}
+/* line 210, ../sass/pages/home/_work.scss */
+.slider-portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+/* line 216, ../sass/pages/home/_work.scss */
+.related-proj {
+  margin: 50px auto;
+}
+/* line 218, ../sass/pages/home/_work.scss */
+.related-proj .single-title {
+  margin-bottom: 70px;
+}
+
+/**
+-  Home/Page Testimonials Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_testimonials.scss */
+.section-testimonials {
+  background: url("https://ww2.sinaimg.cn/large/a15b4afegy1fprvptoihdj21rw0ufta9.jpg") no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding-bottom: 75px;
+  border: none !important;
+}
+/* line 7, ../sass/pages/home/_testimonials.scss */
+.section-testimonials .swiper-container {
+  min-height: 320px;
+  margin-bottom: 20px;
+  margin-top: -20px;
+}
+/* line 13, ../sass/pages/home/_testimonials.scss */
+.section-testimonials .swiper-pagination {
+  bottom: 0;
+}
+
+/* line 17, ../sass/pages/home/_testimonials.scss */
+.testimonial {
+  text-align: center;
+  font-family: "Raleway";
+  color: #162532;
+  padding: 0 20px;
+}
+/* line 23, ../sass/pages/home/_testimonials.scss */
+.testimonial blockquote {
+  border: none;
+  padding: 0;
+  margin: 40px auto;
+  font-weight: 600;
+  font-size: 18px;
+  min-height: 80px;
+  line-height: 26px;
+  font-style: normal;
+}
+
+/* line 34, ../sass/pages/home/_testimonials.scss */
+.tes-author {
+  width: 110px;
+  height: 110px;
+  margin: 20px auto;
+  border: 2px solid #20ddfd;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: relative;
+  background: #f9f9f9;
+  padding: 10px;
+  background: transparent;
+}
+
+/* line 45, ../sass/pages/home/_testimonials.scss */
+.tes-pic {
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+/* line 52, ../sass/pages/home/_testimonials.scss */
+.tes-pic img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+}
+
+/* line 62, ../sass/pages/home/_testimonials.scss */
+.tes-author-name {
+  text-transform: capitalize;
+  font-size: 14px;
+  margin: 5px auto;
+}
+/* line 66, ../sass/pages/home/_testimonials.scss */
+.tes-author-name span {
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+/* line 71, ../sass/pages/home/_testimonials.scss */
+.tes-author-name span::after {
+  content: " - ";
+}
+
+/**
+-   Home/Page Support Section -----------------------------------------
+**/
+/* line 3, ../sass/pages/home/_support.scss */
+.section-support ul {
+  width: 100%;
+  overflow: hidden;
+}
+/* line 8, ../sass/pages/home/_support.scss */
+.section-support li {
+  display: block;
+  text-align: center;
+  width: 100%;
+  margin: 10px 0;
+}
+@media (min-width: 768px) {
+  /* line 8, ../sass/pages/home/_support.scss */
+  .section-support li {
+    width: 50%;
+    float: left;
+  }
+}
+@media (min-width: 992px) {
+  /* line 8, ../sass/pages/home/_support.scss */
+  .section-support li {
+    width: 25%;
+    border-left: 1px solid #f1f1f1;
+  }
+  /* line 22, ../sass/pages/home/_support.scss */
+  .section-support li:last-of-type {
+    border-right: 1px solid #f1f1f1;
+  }
+}
+/* line 28, ../sass/pages/home/_support.scss */
+.section-support img {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
+  height: 140px;
+  width: 220px;
+  margin: 0 auto;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 35, ../sass/pages/home/_support.scss */
+.section-support img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/**
+-   Home/Page Contact Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_contact.scss */
+.section-contact {
+  border-color: #fff;
+  padding-bottom: 70px;
+}
+
+/* line 6, ../sass/pages/home/_contact.scss */
+.contact-form {
+  margin-bottom: 35px;
+}
+/* line 8, ../sass/pages/home/_contact.scss */
+.contact-form textarea {
+  height: 140px;
+}
+
+/* line 13, ../sass/pages/home/_contact.scss */
+.form-input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e1e1e1;
+  background: #fff;
+  line-height: 40px;
+  font-family: "Raleway";
+  margin-bottom: 20px;
+  color: #616161;
+  padding: 0 15px;
+  font-size: 14px;
+  outline: none;
+  resize: none;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 28, ../sass/pages/home/_contact.scss */
+.form-input:focus {
+  border: 1px solid #20ddfd;
+}
+
+/* line 33, ../sass/pages/home/_contact.scss */
+.form-btn {
+  background: #20ddfd;
+  color: #fff;
+  border: none;
+  margin: 0;
+  padding: 10px;
+  border: 1px solid #20ddfd;
+}
+
+/* line 42, ../sass/pages/home/_contact.scss */
+.contact-info {
+  font-family: "Raleway";
+}
+/* line 45, ../sass/pages/home/_contact.scss */
+.contact-info h3, .contact-info .item-desc h4, .item-desc .contact-info h4 {
+  margin: 0 0 5px 0;
+  font-weight: 700;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #162532;
+}
+/* line 53, ../sass/pages/home/_contact.scss */
+.contact-info p {
+  color: #616161;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* line 61, ../sass/pages/home/_contact.scss */
+.site-map {
+  height: 470px;
+  width: 100%;
+}
+/* line 64, ../sass/pages/home/_contact.scss */
+.site-map img {
+  width: 100%;
+  height: 100%;
+}
+/* line 68, ../sass/pages/home/_contact.scss */
+.site-map .map-img {
+  background-image: url(https://ww2.sinaimg.cn/large/a15b4afegy1fprvptoihdj21rw0ufta9.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/**
+-   Home/Page Blog Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_blog.scss */
+.section-blog {
+  background: #fafafa;
+  border-color: #fafafa;
+  padding-bottom: 70px;
+}
+@media (min-width: 768px) {
+  /* line 1, ../sass/pages/home/_blog.scss */
+  .section-blog {
+    padding-bottom: 90px;
+  }
+}
+
+/* line 12, ../sass/pages/home/_blog.scss */
+.blog-post {
+  font-family: "Raleway";
+  color: #162532;
+  overflow: hidden;
+  background: #fff;
+  margin-bottom: 40px;
+}
+/* line 19, ../sass/pages/home/_blog.scss */
+.blog-post a {
+  color: inherit;
+  text-decoration: none;
+}
+/* line 24, ../sass/pages/home/_blog.scss */
+.blog-post .btn {
+  margin: 20px;
+}
+
+/* line 39, ../sass/pages/home/_blog.scss */
+.blog-full .post-img {
+  max-height: 450px;
+}
+
+/* line 43, ../sass/pages/home/_blog.scss */
+.post-img {
+  margin-bottom: 25px;
+  overflow: hidden;
+}
+/* line 49, ../sass/pages/home/_blog.scss */
+.post-img img {
+  width: 100%;
+  height: auto;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+/* line 56, ../sass/pages/home/_blog.scss */
+.post-img:hover img {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+/* line 62, ../sass/pages/home/_blog.scss */
+.post-media {
+  margin-bottom: 25px;
+  width: 100%;
+  overflow: hidden;
+}
+/* line 66, ../sass/pages/home/_blog.scss */
+.post-media video, .post-media iframe {
+  width: 100% !important;
+}
+
+/* line 70, ../sass/pages/home/_blog.scss */
+.media-video {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+
+/* line 76, ../sass/pages/home/_blog.scss */
+.media-video iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 84, ../sass/pages/home/_blog.scss */
+.post-blockquote {
+  padding: 20px;
+  background: #fff;
+}
+/* line 87, ../sass/pages/home/_blog.scss */
+.post-blockquote blockquote {
+  margin: 10px auto;
+}
+/* line 90, ../sass/pages/home/_blog.scss */
+.post-blockquote cite {
+  text-transform: capitalize;
+  font-size: 16px;
+  font-family: "Raleway";
+  margin-bottom: 20px;
+  margin-left: 35px;
+}
+/* line 96, ../sass/pages/home/_blog.scss */
+.post-blockquote cite:before {
+  content: " - ";
+}
+
+/* line 101, ../sass/pages/home/_blog.scss */
+.post-info {
+  font-size: 13px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  padding: 0 20px;
+}
+/* line 106, ../sass/pages/home/_blog.scss */
+.post-info a {
+  margin-right: 20px;
+}
+
+/* line 111, ../sass/pages/home/_blog.scss */
+.post-title {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 118, ../sass/pages/home/_blog.scss */
+.post-title:hover {
+  color: #20ddfd;
+}
+
+/* line 125, ../sass/pages/home/_blog.scss */
+.post-excerpt {
+  font-size: 15px;
+  color: #616161;
+  line-height: 26px;
+  margin-bottom: 30px;
+  padding: 0 20px;
+}
+
+/* line 137, ../sass/pages/home/_blog.scss */
+.page-blog {
+  background: #fafafa;
+  border-color: #fafafa;
+  padding-top: 80px;
+}
+@media (min-width: 768px) {
+  /* line 137, ../sass/pages/home/_blog.scss */
+  .page-blog {
+    padding-top: 100px;
+  }
+}
+
+/* line 151, ../sass/pages/home/_blog.scss */
+.sidebar {
+  font-family: "Raleway";
+}
+/* line 154, ../sass/pages/home/_blog.scss */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+/* line 158, ../sass/pages/home/_blog.scss */
+.sidebar a {
+  display: inline-block;
+  font-family: "Raleway";
+}
+
+/* line 163, ../sass/pages/home/_blog.scss */
+.sidebar-wdg {
+  margin-bottom: 40px;
+}
+
+/* line 168, ../sass/pages/home/_blog.scss */
+.sidebar-title {
+  color: #162532;
+  font-weight: 700;
+  font-size: 16px;
+  font-family: "Raleway";
+  margin: 30px 0 15px;
+  width: 100%;
+  text-transform: uppercase;
+}
+
+/* line 179, ../sass/pages/home/_blog.scss */
+.sidebar-search {
+  position: relative;
+}
+/* line 181, ../sass/pages/home/_blog.scss */
+.sidebar-search .fa {
+  right: 20px;
+  top: 0;
+  font-size: 15px;
+  z-index: 2;
+  color: #e3e3e3;
+  line-height: 40px;
+  -moz-transform: rotateY(180deg);
+  -ms-transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  color: #d4d4d4;
+}
+/* line 192, ../sass/pages/home/_blog.scss */
+.sidebar-search input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid #e3e3e3;
+  box-shadow: none;
+  font-family: "Raleway";
+  padding-left: 15px;
+  outline: none;
+  background: #fafafa;
+  display: block;
+  position: relative;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 205, ../sass/pages/home/_blog.scss */
+.sidebar-search input:focus {
+  border: 1px solid #20ddfd;
+}
+/* line 209, ../sass/pages/home/_blog.scss */
+.sidebar-search .search-btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  position: absolute;
+  right: 10px;
+  top: 0;
+}
+
+/* line 222, ../sass/pages/home/_blog.scss */
+.sidebar-list li {
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 10px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 227, ../sass/pages/home/_blog.scss */
+.sidebar-list li:hover {
+  border-bottom: 1px solid #20ddfd;
+}
+/* line 231, ../sass/pages/home/_blog.scss */
+.sidebar-list a {
+  text-decoration: none;
+  color: #616161;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 10px;
+  display: block;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+/* line 239, ../sass/pages/home/_blog.scss */
+.sidebar-list a:hover {
+  color: #162532;
+}
+
+/* line 245, ../sass/pages/home/_blog.scss */
+.sidebar-posts {
+  padding-top: 4px !important;
+}
+/* line 247, ../sass/pages/home/_blog.scss */
+.sidebar-posts li {
+  overflow: hidden;
+  border-bottom: 1px solid #e3e3e3;
+  margin-bottom: 10px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 252, ../sass/pages/home/_blog.scss */
+.sidebar-posts li:hover {
+  border-bottom: 1px solid #20ddfd;
+}
+/* line 257, ../sass/pages/home/_blog.scss */
+.sidebar-posts img {
+  width: 60px;
+  height: 60px;
+  float: left;
+  -moz-transition: all 2s;
+  -o-transition: all 2s;
+  -webkit-transition: all 2s;
+  transition: all 2s;
+}
+/* line 262, ../sass/pages/home/_blog.scss */
+.sidebar-posts img:hover {
+  -moz-transform: scale(1.1, 1.1);
+  -ms-transform: scale(1.1, 1.1);
+  -webkit-transform: scale(1.1, 1.1);
+  transform: scale(1.1, 1.1);
+}
+
+/* line 268, ../sass/pages/home/_blog.scss */
+.side-post-info {
+  float: left;
+  text-transform: uppercase;
+  color: #162532;
+  margin-bottom: 15px;
+}
+/* line 273, ../sass/pages/home/_blog.scss */
+.side-post-info h2 {
+  color: #162532;
+  font-weight: 700;
+  font-size: 14px;
+  width: 200px;
+  margin: 0;
+  padding-left: 10px;
+  line-height: 20px;
+  display: block;
+}
+/* line 283, ../sass/pages/home/_blog.scss */
+.side-post-info h2 a {
+  color: inherit;
+  text-decoration: none;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 287, ../sass/pages/home/_blog.scss */
+.side-post-info h2 a:hover {
+  text-decoration: none;
+  color: #20ddfd;
+}
+/* line 294, ../sass/pages/home/_blog.scss */
+.side-post-info span {
+  font-size: 13px;
+  padding-left: 10px;
+}
+
+/* line 301, ../sass/pages/home/_blog.scss */
+.sidebar-links {
+  padding-top: 4px !important;
+}
+/* line 303, ../sass/pages/home/_blog.scss */
+.sidebar-links li {
+  display: inline-block;
+  margin-bottom: 10px;
+  text-align: center;
+}
+/* line 308, ../sass/pages/home/_blog.scss */
+.sidebar-links a {
+  display: block;
+  padding: 8px 10px;
+  background: #e3e3e3;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #162532;
+  margin-right: 5px;
+  -moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+/* line 317, ../sass/pages/home/_blog.scss */
+.sidebar-links a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: #20ddfd;
+}
+
+/* line 326, ../sass/pages/home/_blog.scss */
+.post-pagination {
+  color: #162532;
+  font-family: "Raleway";
+  font-size: 16px;
+  padding: 10px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+/* line 334, ../sass/pages/home/_blog.scss */
+.post-pagination li {
+  display: inline-block;
+}
+/* line 338, ../sass/pages/home/_blog.scss */
+.post-pagination a {
+  text-decoration: none;
+  color: inherit;
+  -moz-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  padding: 10px;
+}
+/* line 343, ../sass/pages/home/_blog.scss */
+.post-pagination a:hover {
+  color: #20ddfd;
+}
+/* line 348, ../sass/pages/home/_blog.scss */
+.post-pagination .prev-post {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* line 353, ../sass/pages/home/_blog.scss */
+.post-pagination .next-post {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+/**
+-   Page Single Article Styles -----------------------------------------
+**/
+/* line 1, ../sass/pages/home/_single.scss */
+.page-single {
+  padding-top: 110px;
+  padding-bottom: 70px;
+  background: #fff;
+}
+
+/* line 6, ../sass/pages/home/_single.scss */
+.single-article h1, .single-article h2, .single-article h3, .single-article h4, .single-article h5, .single-article h6, .single-title, .user-name {
+  font-size: 16px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+/* line 13, ../sass/pages/home/_single.scss */
+.single-article {
+  margin-bottom: 30px;
+}
+/* line 17, ../sass/pages/home/_single.scss */
+.single-article .blog-post {
+  background: transparent;
+}
+/* line 20, ../sass/pages/home/_single.scss */
+.single-article .blog-post:hover img {
+  -moz-transform: none;
+  -ms-transform: none;
+  -webkit-transform: none;
+  transform: none;
+}
+/* line 23, ../sass/pages/home/_single.scss */
+.single-article .blog-post:hover .post-title {
+  color: #162532;
+}
+/* line 28, ../sass/pages/home/_single.scss */
+.single-article .post-title {
+  font-size: 22px;
+  padding: 0;
+}
+/* line 33, ../sass/pages/home/_single.scss */
+.single-article .post-info {
+  padding: 0;
+}
+@media (min-width: 768px) {
+  /* line 36, ../sass/pages/home/_single.scss */
+  .single-article .post-img {
+    height: 450px;
+  }
+}
+/* line 42, ../sass/pages/home/_single.scss */
+.single-article p {
+  font-size: 15px;
+  color: #616161;
+  line-height: 26px;
+  margin-bottom: 30px;
+  font-family: "Raleway";
+}
+/* line 50, ../sass/pages/home/_single.scss */
+.single-article h1 {
+  font-size: 20px;
+}
+/* line 54, ../sass/pages/home/_single.scss */
+.single-article h2 {
+  font-size: 18px;
+}
+/* line 58, ../sass/pages/home/_single.scss */
+.single-article h3, .single-article .item-desc h4, .item-desc .single-article h4 {
+  font-size: 18px;
+}
+
+/* line 67, ../sass/pages/home/_single.scss */
+.single-title {
+  width: 100%;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 20px;
+  position: relative;
+  margin-bottom: 40px;
+  color: #162532;
+  font-size: 15px;
+}
+
+/* line 79, ../sass/pages/home/_single.scss */
+.share-icons {
+  min-width: 350px;
+  text-align: right;
+  position: absolute;
+  top: -5px;
+  right: 0;
+}
+
+/* line 86, ../sass/pages/home/_single.scss */
+.author-info img, .comment img {
+  width: 100px;
+  height: 100px;
+  -moz-border-radius: 100%;
+  -webkit-border-radius: 100%;
+  border-radius: 100%;
+  position: absolute;
+  top: 20px;
+  left: 0;
+}
+
+/* line 94, ../sass/pages/home/_single.scss */
+.author-info {
+  position: relative;
+  padding: 20px 0 0 120px;
+  color: #162532;
+}
+/* line 102, ../sass/pages/home/_single.scss */
+.author-info .user-name:after {
+  content: " ";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 30px;
+  background: #20ddfd;
+  height: 3px;
+}
+
+/* line 114, ../sass/pages/home/_single.scss */
+.user-name {
+  margin-bottom: 10px;
+  padding-bottom: 15px;
+  color: #162532;
+}
+/* line 119, ../sass/pages/home/_single.scss */
+.user-name span {
+  font-size: 13px;
+  font-family: "Roboto";
+  font-weight: normal;
+}
+/* line 123, ../sass/pages/home/_single.scss */
+.user-name span:before {
+  content: " - ";
+}
+
+/* line 129, ../sass/pages/home/_single.scss */
+.comment {
+  position: relative;
+  padding: 20px 20px 20px 80px;
+  margin-bottom: 10px;
+}
+/* line 133, ../sass/pages/home/_single.scss */
+.comment p {
+  color: #616161;
+  font-size: 15px;
+  min-height: 26px;
+  margin-bottom: 20px;
+}
+/* line 140, ../sass/pages/home/_single.scss */
+.comment .user-name {
+  padding: 0;
+  font-size: 15px;
+}
+/* line 144, ../sass/pages/home/_single.scss */
+.comment img {
+  width: 60px;
+  height: 60px;
+}
+@media (min-width: 768px) {
+  /* line 150, ../sass/pages/home/_single.scss */
+  .comment.comment-replay {
+    margin-left: 60px;
+  }
+}
+
+/* line 158, ../sass/pages/home/_single.scss */
+.comment-links {
+  margin-bottom: 25px;
+}
+/* line 160, ../sass/pages/home/_single.scss */
+.comment-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #162532;
+  font-size: 13px;
+  padding-right: 10px;
+  -moz-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+}
+/* line 167, ../sass/pages/home/_single.scss */
+.comment-links a:hover {
+  color: #20ddfd;
+}
+
+/* line 173, ../sass/pages/home/_single.scss */
+.comments-form {
+  margin-bottom: 40px;
+}
+/* line 175, ../sass/pages/home/_single.scss */
+.comments-form textarea {
+  height: 160px;
+}

@@ -1,0 +1,498 @@
+.header{
+  height: 800px;
+  width: 100%;
+  padding: 0;
+  color: #000;
+  /*border: 0.5px solid;*/
+}
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+
+.header-homeImg{
+  display: inline-block;
+  float: left;
+  width: 25px;
+  height: 25px;
+
+  background: url("../img/son-home-redWhite.png")/*tpa=http://www.ipaynow.cn/images/withUs/son-home-redWhite.png*/ no-repeat center;
+  background-size: cover;
+}
+
+.header-logoImg{
+  display: inline-block;
+  float: left;
+  width: 100px;
+  height: 18px;
+  margin:3px 5px 0 10px;
+  background: url("../son-logo-black.png")/*tpa=http://www.ipaynow.cn/images/withUs/son-logo-black.png*/ no-repeat center;
+  background-size: cover;
+}
+.header-logoIcon{
+  display: inline-block;
+  float: left;
+  width: 25px;
+  height: 25px;
+  background: url("../logoIcon-black.png")/*tpa=http://www.ipaynow.cn/images/withUs/logoIcon-black.png*/ no-repeat center;
+}
+
+.header-location{
+  display: inline-block;
+  float: left;
+  width: 90px;
+  height: 24px;
+  line-height: 25px;
+  font-size: 14px;
+  color: #000;
+}
+
+.header-corpCulture{
+  height: 84px;
+  margin-top: 160px;
+  text-align: left;
+
+  font-size: 64px;
+  color: #000;
+  letter-spacing: -2.75px;
+}
+
+.menu{
+  background: #fff;
+  height: 110px;
+  /*border-radius: 45px;*/
+  margin-top: -345px;
+
+  box-shadow: 0 2px 10px 0 rgba(133,133,133,0.5);
+  border-radius: 2px;
+
+  text-align: center;
+  padding: 12px 0 ;
+  z-index: 10;
+}
+
+.menu>dl>dt{
+
+  height: 86px;
+  line-height: 86px;
+  display: inline-block;
+
+  cursor: pointer;
+
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  /*border:1px solid #fff ;*/
+
+  font-size: 14px;
+}
+
+.menu>dl>dt:nth-of-type(2n+1){
+  width: 19.8%;
+  border-radius: 2px;
+  background: #fff;
+}
+.menu>dl>dt:nth-of-type(2n){
+  width: 5%;
+}
+
+/*.menu>dl>dt:nth-of-type(2n+1):hover{
+  color: #FE063C;
+}*/
+
+.footer{
+ 
+  margin: 50px 0 0 0;
+  background-color: #fff;
+  box-shadow: 0 0 20px 1px #DDD;
+}
+.footer-content{
+  display: flex;
+  height: 250px;
+  justify-content:space-around;
+}
+.footer-content>div{
+  height: 200px;
+  line-height: 20px;
+  margin: 40px 0 0 0;
+}
+.footer-content>div>p{
+  display: inline-block;
+  float: left;
+  /*margin: 40px 0 0 0;*/
+}
+.footer-content>div>p:nth-of-type(2){
+  margin: 30px 0 0 30px;
+}
+.footer-content-title{
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+color: #666;
+letter-spacing: 1px;
+font-weight: 600;
+display: block;
+padding-bottom: 10px;
+}
+.footer-content a{
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+  color: #000;
+  letter-spacing: 1.67px;
+  line-height: 30px;
+}
+.footer-line-between{
+  display: block;
+  height: 0.5px;
+  width:100%;
+  margin: 10px 0;
+  background: #cdc5c5;
+
+}
+.footer-content a:hover{
+  color: red;
+}
+.footer-content-content{
+  font-family: "Microsoft Yahei";
+  font-size: 12px;
+color: #000;
+letter-spacing: 1.67px;
+display: block;
+padding-bottom: 2px;
+}
+.footer-ICP{
+  height: 100px;
+  padding: 80px 0 0 30px;
+  text-align: center;
+}
+/*.englishChanger{
+  margin: auto;
+  width: 27px;
+  height: 27px;
+  background:url() no-repeat center;
+  background-size: cover;
+  -webkit-background-size: cover;
+}*/
+.englishChangerImg{
+  display: block;
+  margin: auto;
+}
+.footerContact{
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	border-radius: 20px;
+
+	margin-top: 20px;
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+	box-shadow: 0 2px 8px rgba(115,115, 115, 0.7);
+}
+.footerWay1{
+	background: #000 url("../../images/unique/icons/footer-wx.png")/*tpa=http://www.ipaynow.cn/images/unique/icons/footer-wx.png*/ center;
+	background-size: cover;
+	-webkit-background-size: cover;
+}
+.footerWay1:hover{
+	background: #00B642 url("../../images/unique/icons/footer-wx.png")/*tpa=http://www.ipaynow.cn/images/unique/icons/footer-wx.png*/ center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	box-shadow: 0 2px 8px rgba(173,204,142, 1);
+}
+
+.wxQrCodeShow{
+	opacity: 0;
+  width: 130px;
+  height: 130px;
+	position: absolute;
+
+	margin: -140px 0 0 -45px;
+	background: url("../../images/qrCode/index-wx.png")/*tpa=http://www.ipaynow.cn/images/qrCode/index-wx.png*/;
+	background-size: cover;
+
+	-webkit-transition: all .3s ease-out;
+	transition: all .3s ease-out;
+  z-index: -1;
+}
+
+.footerWay1:hover .wxQrCodeShow{
+  opacity: 1;
+  z-index: 1;
+  transform: translateY(0.3rem);
+}
+
+.footerWay2{
+	background: #000 url("../../images/unique/icons/footer-wb.png")/*tpa=http://www.ipaynow.cn/images/unique/icons/footer-wb.png*/ center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	margin-left: 8px;
+}
+
+.footerWay2:hover{
+	background: #FCBA36 url("../../images/unique/icons/footer-wb.png")/*tpa=http://www.ipaynow.cn/images/unique/icons/footer-wb.png*/ center;
+	background-size: cover;
+	-webkit-background-size: cover;
+	box-shadow: 0 2px 8px rgba(218,192,149, 1);
+}
+
+
+.header-logoDiv{
+  margin-top: 40px;
+}
+.header-logoDiv:nth-of-type(1){
+  flex-shrink:0;
+}
+.son-header-menu{
+  flex-shrink:1;
+  display: flex;
+  justify-content:flex-end;
+}
+.son-header-menu>div{
+  display: inline-block;
+  margin-left: 1%;
+  width: 100px;
+  height: 50px;
+
+  line-height:30px;
+  cursor:pointer;
+  text-align: center;
+  z-index: 99;
+}
+.menu-login-btn>span{
+  display: block;
+  margin-top: 5px;
+}
+.menu-login-btn>span>a{
+  color: #000;
+}
+.menu-login-btn>span>a:visited {
+  color: #000;
+}
+/*.menu-login-btn>span>a:hover{
+  color: #000;
+}*/
+
+
+@keyframes showMenuList {
+  from{
+    opacity: 0;
+    transform: rotateX(359deg);
+  }
+  to{
+    opacity: 1;
+    transform: rotateX(360deg);
+  }
+}
+.header-menu-borderP{
+  /*position: absolute;*/
+  display: inline-block;
+  height: 90px;
+  margin:-70px 0 0 0;
+  width: 10px;
+
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.header-menu-links>div:hover .header-menu-borderP{
+  border-bottom:  10px solid #000;
+}
+/*.header-menu-links>div:hover span{
+  color: #000;
+}*/
+
+.menu-hidd{
+  display: none;
+  z-index: 99;
+  margin: 0 0 0 -25px;
+  padding: 9px 0 0 0;
+  height:200px;
+  animation: showMenuList 0.2s 0s ease-out forwards ;
+  -webkit-animation: showMenuList 0.2s 0s ease-in-out forwards ;
+  animation-direction:alternate;
+  -webkit-animation-direction:alternate;
+  transform-origin: 10px 10px;
+  padding-top: 29px;
+  position: relative;
+  top: -19px;
+}
+.menu-product:hover>.menu-product-content{
+  display:block;
+}
+.menu-exploit:hover>.menu-exploit-content{
+  display:block;
+}
+.menu-list{
+  position: absolute;
+  z-index: 99;
+  line-height: 30px;
+  padding: 20px 0 0 0;
+
+  text-align: left;
+  font-family: "Microsoft Yahei";
+  color:#666;
+  background: #fff;
+}
+.menu-product-list{
+  width: 300px;
+  height:320px;
+  padding: 20px 0 0 54px;
+  margin: 0 0 0 -75px;
+  background: url("../../images/unique/arrowCloud.png")/*tpa=http://www.ipaynow.cn/images/unique/arrowCloud.png*/ no-repeat center;
+  background-size: cover;
+}
+.menu-exploit-list{
+  width: 130px;
+  height:100px;
+  padding: 22px 0 0 0;
+  padding-left: 28%;
+  margin: 0 0 0 10px;
+  text-align: left;
+  background: url("../../images/unique/arrowCloud2.png")/*tpa=http://www.ipaynow.cn/images/unique/arrowCloud2.png*/ no-repeat center;
+  background-size: cover;
+}
+.header-menu-links a{
+  font-size: 15px;
+  color:#666;
+}
+.header-menu-links dl>dt:hover a{
+  color: red;
+}
+.menu-product-list>div>dl>dt:nth-of-type(1){
+  font-family: "Microsoft Yahei";
+  color:#000;
+  font-weight: 550;
+  line-height: 40px;
+}
+.menu-product-list>div{
+  display: inline-block;
+  float: left;
+}
+.menu-product-list>div:nth-of-type(2){
+  margin-left: 40px;
+}
+.navbar{
+  display: none;
+}
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+
+  .navbar{
+    display: block;
+    position: absolute;
+    width: 100%;
+    color:#fff;
+    background-color:rgba(0,0,0,.8);
+    z-index: 50;
+  }
+  .navbar-brand>img{
+    width: 90px;
+    margin-top: 2px;
+  }
+  .header-menu-logo{
+    width: 90px;
+    margin-top: 2px;
+  }
+  .header-logoDiv{
+    display: none;
+  }
+  .header{
+    height: 240px;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .header-corpCulture{
+    margin-top: 0;
+    font-size: 40px;
+  }
+  .header-homeImg{
+    width: 15px;
+    height: 15px;
+  }
+  .header-logoImg{
+    width: 80px;
+    height: 16px;
+    margin:0 5px 0 10px;
+  }
+  .header-logoIcon{
+    width: 20px;
+    height: 20px;
+  }
+  .header-location{
+    width: auto;
+    height: 24px;
+    line-height: 15px;
+  }
+
+
+  .menu{
+    height: 50px;
+    margin-top: -25px;
+  }
+  .menu>dl>dt{
+    height: 34px;
+    line-height: 34px;
+    font-size: 12px;;
+  }
+  .menu>dl>dt:nth-of-type(2n){
+    width: 3%;
+  }
+  .footer{
+    height: 1400px;
+  }
+  .footer-content{
+    flex-wrap:  wrap;
+    height: 950px;
+    padding: 50px 0 0 0;
+  }
+  .footer-content>p{
+    height: auto;
+    width: 100%;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .footer-ICP{
+    height: 100px;
+    padding: 50px;
+    text-align: center;
+    margin: 230px 0 0 0;
+  }
+  .footer-ICP>span{
+    display: inline-block;
+    margin: 100px 0 0 0;
+  }
+  .footer-content>div{
+    height: auto;
+    width: 100%;
+    line-height: 20px;
+    margin: 20px 0 0 0;
+    text-align: center;
+  }
+  .footer-content>div>p{
+    display: block;
+    float: none;
+    margin: 0;
+  }
+  .footer-line-between{
+    display: block;
+    height: 0.5px;
+    width:30%;
+    margin: 10px 35%;
+    background: #cdc5c5;
+  }
+  .footer-content>div>p:nth-of-type(2){
+    margin: 0;
+  }
+
+}
