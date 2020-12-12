@@ -35,7 +35,6 @@ if ($islogin == 1) {
                                                     <select  class="form-control" name="alipay_mode"  id="alipay_mode" onchange="api_qh('ali',this.value)">
                                                       <option value="1" <?=$conf['alipay_mode']==1?"selected":""?> >官方通道</option>
 													  <option value="4" <?=$conf['alipay_mode']==4?"selected":""?> >支付宝[当面付]</option>
-                                                        <option value="5" <?=$conf['alipay_mode']==5?"selected":""?> >Oreo扫码付</option>
                                                       <option value="2" <?=$conf['alipay_mode']==2?"selected":""?> >易支付</option>
                                                       <option value="3" <?=$conf['alipay_mode']==3?"selected":""?> >码支付</option>
                                                       <option value="0" <?=$conf['alipay_mode']==0?"selected":""?> >（关闭）开启维护模式</option>
@@ -128,21 +127,6 @@ if ($islogin == 1) {
                                                        <small> * 码支付通信密钥(KEY)，以数字和字母组成的32位字符</small>
                                                      </div>                          
 	                                                 </div></div>
-
-                                                <div id="ali_cpay_info" style="<?php echo $conf['alipay_mode'] == 5 ? "" : "display: none;";?>" >
-                                                    <div class="form-group">
-                                                        <label>Oreo扫码付APP_ID</label>
-                                                        <div>
-                                                            <input type="text" class="form-control" name="oreo_cpay_appid"   value="<?php echo $conf['oreo_cpay_appid']; ?>" class="form-control"/>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form-group">
-                                                        <label>Oreo扫码付APP_KEY</label>
-                                                        <div>
-                                                            <input type="text" class="form-control" name="oreo_cpay_appkey"   value="<?php echo $conf['oreo_cpay_appkey']; ?>" class="form-control"/>
-                                                        </div>
-                                                    </div></div>
-
                                                 <!-- END 对接码支付信息-->
                                                     <!--关闭通道维护信息-->
                                                    <div id="ali_close_info" style="<?php echo $conf['alipay_mode'] == 0 ? "" : "display: none;";?>">
@@ -160,10 +144,8 @@ if ($islogin == 1) {
                                                     <select  class="form-control" name="wxpay_mode"  id="wxpay_mode" onchange="api_qh('wx',this.value)">
                                                       <option value="1" <?=$conf['wxpay_mode']==1?"selected":""?> >官方通道</option>
                                                       <option value="2" <?=$conf['wxpay_mode']==2?"selected":""?> >易支付</option>
-                                                        <option value="5" <?=$conf['wxpay_mode']==5?"selected":""?> >Oreo扫码付</option>
                                                       <option value="3" <?=$conf['wxpay_mode']==3?"selected":""?> >码支付</option>
-													                            <option value="4" <?=$conf['wxpay_mode']==4?"selected":""?> >易商户</option>
-                                                      <option value="6" <?=$conf['wxpay_mode']==6?"selected":""?> >网信钱包(子墨小微支付)</option>
+                                                        <option value="4" <?=$conf['wxpay_mode']==4?"selected":""?> >易商户</option>
                                                       <option value="0" <?=$conf['wxpay_mode']==0?"selected":""?> >（关闭）开启维护模式</option>
                                                    </select>
                                                 </div>
@@ -258,41 +240,6 @@ if ($islogin == 1) {
                                                       <input type="text" class="form-control" name="oreo_eshanghu_api_key_wx" value="<?php echo $conf['oreo_eshanghu_api_key_wx']; ?>" class="form-control"/>
                                                      </div>  
 	                                                 </div></div>
-													 <div id="wx_etshanghu_info" style="<?php echo $conf['wxpay_mode'] == 5 ? "" : "display: none;";?>" >
-                                                   <div class="form-group">
-                                                    <label>Oreo扫码付App_ID</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_cpay_appid" value="<?php echo $conf['oreo_cpay_appid']; ?>" class="form-control"/>
-                                                     </div>  
-	                                                 </div>
-													                        <div class="form-group">
-                                                    <label>Oreo扫码付App_KEY</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_cpay_appkey" value="<?php echo $conf['oreo_cpay_appkey']; ?>" class="form-control"/>
-                                                     </div>  
-	                                                 </div>
-                                                   </div>
-                                                   <div id="wx_zmpay_info" style="<?php echo $conf['wxpay_mode'] == 6 ? "" : "display: none;";?>" > 
-                                                   <div class="form-group">
-                                                    <label>对接ID</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_zmpay_api_id_wx" value="<?php echo $conf['oreo_zmpay_api_id_wx']; ?>" class="form-control"/>
-                                                      <small> * http://open.wangxinqianbao.cn/获取</small>
-                                                     </div>
-	                                                 </div>
-                                                   <div class="form-group">
-                                                    <label>对接Token</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_zmpay_api_token_wx" value="<?php echo $conf['oreo_zmpay_api_token_wx']; ?>" class="form-control"/>
-                                                     </div>  
-	                                                 </div>
-													                        <div class="form-group">
-                                                    <label>MCHID</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_zmpay_api_mchid_wx" value="<?php echo $conf['oreo_zmpay_api_mchid_wx']; ?>" class="form-control"/>
-                                                     </div>  
-	                                                 </div>
-                                                   </div>
                                                    <!-- END 对接码支付信息-->
                                                     <!--关闭通道维护信息-->
                                                    <div id="wx_close_info" style="<?php echo $conf['wxpay_mode'] == 0 ? "" : "display: none;";?>">
@@ -463,27 +410,6 @@ function api_qh(type,val){
 	   $(eshanghu).show();
 	   $(etshanghu).hide();
      $(zmpay).hide();  
-    }
-	if(val == 5){
-       $(alipay).hide()
-	   $(alipaydm).hide()
-       $(epay).hide();
-       $(codepay).hide();
-        $(cpay).show();
-       $(cloes).hide();
-	   $(eshanghu).hide();
-	   $(etshanghu).show();
-     $(zmpay).hide();  
-    }
-    if(val == 6){
-       $(alipay).hide()
-	   $(alipaydm).hide()
-       $(epay).hide();
-       $(codepay).hide();
-       $(cloes).hide();
-	   $(eshanghu).hide();
-	   $(etshanghu).hide();
-     $(zmpay).show();  
     }
 }
            $("#editPayset").click(function () {

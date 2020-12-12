@@ -33,7 +33,6 @@ if ($islogin == 1) {
                                                 <div class="form-group">
                                                     <label>选择发送方式</label>
                                                   <select  class="form-control" name="mail_cloud"  id="mail_cloud"  onchange="sh_rg('sh',this.value)">
-												  <option value="2" <?=$conf['mail_cloud']==2?"selected":""?> >Oreo云短信</option>
                                                   <option value="1" <?=$conf['mail_cloud']==1?"selected":""?> >sendcloud</option>
                                                   <option value="0" <?=$conf['mail_cloud']==0?"selected":""?> >SMTP发信</option>
                                                  </select>
@@ -63,16 +62,6 @@ if ($islogin == 1) {
                                                         <input type="text" class="form-control" placeholder="请输入正确的密码/授权码"  name="mail_pwd" value="<?php echo $conf['mail_pwd']; ?>"/>
                                                     </div>
                                                 </div></div>
-												<div  id="sh_oreo"  style="<?php echo $conf['mail_cloud'] == 2 ? "" : "display: none;";?>">
-                                                <div class="form-group">
-                                                    <label>Token</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_smstoken"  placeholder="" value="<?php echo $conf['oreo_smstoken']; ?>" class="form-control"/>
-                                                    </div>
-													<small>* Oreo云短信调用腾讯云短信，因此该服务需要付出一定的费用</small><br>
-												    <small>* Oreo云短信开通方法请到<a href="https://auth.oreopay.com/user/oreo_sms.php">Oreo授权站</a>开通，开通成功送出极验</small>
-                                                </div>
-                                              </div>
 												<div  id="sh_dx"  style="<?php echo $conf['mail_cloud'] == 1 ? "" : "display: none;";?>">
                                                 <!--<div class="form-group">
                                                     <label>Send Cloud API_USER</label>

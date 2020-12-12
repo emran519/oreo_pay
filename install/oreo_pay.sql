@@ -97,6 +97,8 @@ INSERT INTO `oreo_config` (`k`, `v`) VALUES
 ('authcode', 'cb468e068856b814d6e96aa0b3d638a'),
 ('beian', '苏ICP备18068633号-1'),
 ('CAPTCHA_ID', ''),
+('oreo_applet_appid', ''),
+('oreo_applet_secret', ''),
 ('chaojivip', '0'),
 ('chaoji_js', '<li>超级会员</li>\n<li>介绍1</li>\n<li>介绍2</li>\n<li>介绍3</li>'),
 ('chaoji_money', '0'),

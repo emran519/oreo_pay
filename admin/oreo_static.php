@@ -74,6 +74,8 @@
                                 <ul class="list-unstyled">
                                 <li class="has_sub">
                                     <li><a href="oreo_webset.php">站点信息配置</a></li>
+                                    <li><a href="oreo_admin.php">管理员信息配置</a></li>
+                                    <li><a href="oreo_applet.php">小程序配置</a></li>
                                     <li><a href="oreo_dispatch.php">短信邮箱配置</a></li>
                                     <li><a href="oreo_shlogin.php">商户登录配置</a></li>
                                     <li><a href="oreo_fwtk.php">服务条款配置</a></li>

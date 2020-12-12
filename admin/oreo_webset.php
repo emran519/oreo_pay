@@ -111,15 +111,6 @@ if ($islogin == 1) {
                                                     </div>
                                                 </div>
 												<div class="form-group">
-                                                    <label>联网查询失信名单</label>
-                                                    <div>
-                                                    <select  class="form-control" name="shixin" id="shixin">
-                                                    <option value="0" <?=$conf['shixin']==0?"selected":""?> >关闭</option>
-                                                    <option value="1" <?=$conf['shixin']==1?"selected":""?> >开启（失信人员无法注册和进行有关操作）</option>          
-                                                    </select>
-                                                    </div>
-                                                </div>
-												<div class="form-group">
                                                     <label>微信H5开关</label>
                                                     <div>
                                                     <select  class="form-control" name="wxpay_h5" id="wxpay_h5">

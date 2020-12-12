@@ -11,9 +11,9 @@ foreach ($_POST as $k => $value) {
         $value=daddslashes($value);
         $DB->query("insert into oreo_config set `k`='{$k}',`v`='{$value}' on duplicate key update `v`='{$value}'");
 	}
-	if(!empty($_POST['admin_pwd'])){
-        $pwd =  md5($_POST['admin_pwd'].$password_hash."admin");
-        $DB->query("update `oreo_config` set `v` ='{$pwd}' where `k`='admin_pwd'");
+	if(!empty($_POST['oreo_password'])){
+        $pwd =  md5($_POST['oreo_password'].$password_hash);
+        $DB->query("update `oreo_config` set `v` ='{$pwd}' where `k`='oreo_password'");
     }
 	 exit('{"code":1,"msg":"succ"}');
 break;	

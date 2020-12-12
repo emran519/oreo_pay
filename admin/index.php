@@ -214,16 +214,7 @@ $token=authcode("{$pid}\t{$session}\t{$expiretime}", 'ENCODE', SYS_KEY);
                                                             <td>
                                                                 <a href="javascript:void(0);">检查新版本</a>
                                                             </td>
-                                                            <td>【开源版本】</td>
-                                                        </tr>
-                                                        <tr >
-                                                            <td>
-                                                               <img class="rounded-circle" src="../assets/images/users/fwq.jpg" alt="user" width="40"> </td>
-                                                            <td>
-                                                                <a href="javascript:void(0);">授权服务器</a>
-                                                            </td>                                                
-                                                            <td>【开源版本】</td>
-
+                                                            <td>【捐赠版V2.1】</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
