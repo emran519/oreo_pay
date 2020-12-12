@@ -211,7 +211,7 @@ $data=unserialize(file_get_contents(SYSTEM_ROOT.'db.txt'));
                                                             <td>
                                                                 <a href="javascript:void(0);">检查新版本</a>
                                                             </td>
-                                                            <td>【捐赠版V2.1】</td>
+                                                            <td>【捐赠版V2.2】</td>
                                                         </tr>
                                                     </tbody>
                                                 </table>
