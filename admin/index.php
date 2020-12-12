@@ -1,4 +1,3 @@
-
 <?php
 include("../oreo/Oreo.Cron.php");
 if($islogin==1){}else exit("<script language='javascript'>window.location.href='./login.php';</script>");
@@ -6,8 +5,6 @@ include("./oreo_static.php");
 $count1=$DB->query("SELECT count(*) from oreo_order")->fetchColumn();
 $count2=$DB->query("SELECT count(*) from oreo_user")->fetchColumn();
 $data=unserialize(file_get_contents(SYSTEM_ROOT.'db.txt'));
-$mysqlversion=$DB->query("select VERSION()")->fetch();
-$token=authcode("{$pid}\t{$session}\t{$expiretime}", 'ENCODE', SYS_KEY);
 ?>
 <!-- Loader -->
                     <div class="page-content-wrapper ">
