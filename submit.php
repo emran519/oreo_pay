@@ -208,9 +208,6 @@ if($conf['alipay_mode']==3){
  if($conf['alipay_mode'] == 4) {
         echo "<script>window.location.href='./pay/alipay/alipay.php?trade_no={$trade_no}&type={$type}&name={$name}&money={$money}&sitename={$sitename}';</script>";
     }
-    if($conf['alipay_mode'] == 5) {
-        echo "<script>window.location.href='./pay/oreocpay/pay.php?trade_no={$trade_no}&sitename={$sitename}';</script>";
-    }
 }
 if($type=='wxpay'){
 $userpid=$DB->query("select pid from oreo_order where trade_no='{$trade_no}' limit 1")->fetch();
@@ -319,31 +316,6 @@ echo $html_text;
 }
 if($conf['wxpay_mode']==3){
 	echo "<script>window.location.href='./pay/codepay/codepay.php?trade_no={$trade_no}&type=wxpay&sitename={$sitename}';</script>";
-}
-if($conf['wxpay_mode']==4){
-	if(strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger')!==false){
-		echo "<script>window.location.href='./pay/eshanghu/wxjspay.php?trade_no={$trade_no}';</script>";
-	}elseif(checkmobile()==true){
-	if($conf['wxpay_h5']==1){
-		echo "<script>window.location.href='./pay/eshanghu/wxwappay.php?trade_no={$trade_no}&sitename={$sitename}';</script>";
-	}else{
-	}
-		echo "<script>window.location.href='./pay/eshanghu/wxwappay.php?trade_no={$trade_no}&sitename={$sitename}';</script>";
-	}else{
-		echo "<script>window.location.href='./pay/eshanghu/wxpay.php?trade_no={$trade_no}&sitename={$sitename}';</script>";
-	}
-}
-if($conf['wxpay_mode']==5){
-    echo "<script>window.location.href='./pay/oreocpay/pay.php?trade_no={$trade_no}&sitename={$sitename}';</script>";
-}
-if($conf['wxpay_mode']==6){
-	if(strpos($_SERVER['HTTP_USER_AGENT'], 'MicroMessenger')!==false){
-		echo "<script>window.location.href='./pay/zmpay/wxjspay.php?trade_no={$trade_no}';</script>";
-	}elseif(checkmobile()==true){
-		echo "<script>window.location.href='./pay/zmpay/wxwappay.php?trade_no={$trade_no}&sitename={$sitename}';</script>";
-	}else{
-		echo "<script>window.location.href='./pay/zmpay/wxpay.php?trade_no={$trade_no}&sitename={$sitename}';</script>";
-	}
 }
 }
 if($type=='qqpay'){

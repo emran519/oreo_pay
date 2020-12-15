@@ -145,7 +145,6 @@ if ($islogin == 1) {
                                                       <option value="1" <?=$conf['wxpay_mode']==1?"selected":""?> >官方通道</option>
                                                       <option value="2" <?=$conf['wxpay_mode']==2?"selected":""?> >易支付</option>
                                                       <option value="3" <?=$conf['wxpay_mode']==3?"selected":""?> >码支付</option>
-                                                        <option value="4" <?=$conf['wxpay_mode']==4?"selected":""?> >易商户</option>
                                                       <option value="0" <?=$conf['wxpay_mode']==0?"selected":""?> >（关闭）开启维护模式</option>
                                                    </select>
                                                 </div>
@@ -219,26 +218,6 @@ if ($islogin == 1) {
                                                       <input type="text" class="form-control" name="oreo_codepay_api_key_wx"   value="<?php echo $conf['oreo_codepay_api_key']; ?>" class="form-control"/>
                                                        <small> * 码支付通信密钥(KEY)，以数字和字母组成的32位字符</small>
                                                      </div>                          
-	                                                 </div></div>
-													 <div id="wx_eshanghu_info" style="<?php echo $conf['wxpay_mode'] == 4 ? "" : "display: none;";?>" > 
-                                                   <div class="form-group">
-                                                    <label>易商户mch_id</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_eshanghu_api_id_wx" value="<?php echo $conf['oreo_eshanghu_api_id_wx']; ?>" class="form-control"/>
-                                                      <small> * https://1shanghu.com/获取</small>
-                                                     </div>
-	                                                 </div>
-                                                   <div class="form-group">
-                                                    <label>易商户secret</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_eshanghu_api_secret_wx" value="<?php echo $conf['oreo_eshanghu_api_secret_wx']; ?>" class="form-control"/>
-                                                     </div>  
-	                                                 </div>
-													 <div class="form-group">
-                                                    <label>易商户key</label>
-                                                    <div>
-                                                      <input type="text" class="form-control" name="oreo_eshanghu_api_key_wx" value="<?php echo $conf['oreo_eshanghu_api_key_wx']; ?>" class="form-control"/>
-                                                     </div>  
 	                                                 </div></div>
                                                    <!-- END 对接码支付信息-->
                                                     <!--关闭通道维护信息-->
@@ -409,7 +388,7 @@ function api_qh(type,val){
        $(cloes).hide();
 	   $(eshanghu).show();
 	   $(etshanghu).hide();
-     $(zmpay).hide();  
+     $(zmpay).hide();
     }
 }
            $("#editPayset").click(function () {
