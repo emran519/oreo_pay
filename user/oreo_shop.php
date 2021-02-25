@@ -1,9 +1,6 @@
 <?php
 include("../oreo/Oreo.Cron.php");
 if($islogin2 != 1){exit("<script language='javascript'>window.location.href='./login.php';</script>");}
-if($conf['chaojivip']==0||$conf['alivip']==0||$conf['wxvip']==0||$conf['qqvip']==0){
-    exit("<script language='javascript'>alert('本站管理员暂未开启接口权限购买功能，如有疑问请联系客服！');history.go(-1);</script>");
-}
 include("./oreo_static.php");
 $vipzfb=$DB->query("select * from oreo_viporder where uid='$pid' and name='支付宝' ")->fetch();
 $vipwx=$DB->query("select * from oreo_viporder where uid='$pid' and name='微信支付' ")->fetch();
